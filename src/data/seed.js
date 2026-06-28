@@ -7,11 +7,11 @@ export const seedData = {
     note: "四晚住同一間，遠程日以包車 / 大型計程車為主。"
   },
   participants: [
-    { id: "a", name: "A" },
-    { id: "b", name: "B" },
-    { id: "c", name: "C" },
-    { id: "d", name: "D" },
-    { id: "e", name: "E" }
+    { id: "a", name: "Iris" },
+    { id: "b", name: "梨寶" },
+    { id: "c", name: "Alice" },
+    { id: "d", name: "Cindy" },
+    { id: "e", name: "小葵" }
   ],
   days: [
     {
