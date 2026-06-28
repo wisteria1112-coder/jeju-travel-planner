@@ -510,19 +510,23 @@ export default function App() {
 
               <div className="expense-list flat-list">
                 <h3>支出明細</h3>
-                {data.expenses.map((expense) => (
-                  <div className="expense-row" key={expense.id}>
-                    <div>
-                      <strong>{expense.title}</strong>
-                      <small>{expense.category} · {nameOf(data.participants, expense.paidBy)} 先付</small>
-                    </div>
-                    <b>{money(expense.amount)}</b>
-                    <button aria-label="刪除支出" onClick={() => deleteExpense(expense.id)}>
-                      <Trash2 size={16} />
-                    </button>
-                  </div>
-                ))}
-              </div>
+
+{data.expenses.length === 0 && (
+  <p className="empty">尚無支出</p>
+)}
+
+{data.expenses.map((expense) => (
+  <div className="expense-row" key={expense.id}>
+    <div>
+      <strong>{expense.title}</strong>
+      <small>{expense.category} · {nameOf(data.participants, expense.paidBy)} 先付</small>
+    </div>
+    <b>{money(expense.amount)}</b>
+    <button aria-label="刪除支出" onClick={() => deleteExpense(expense.id)}>
+      <Trash2 size={16} />
+    </button>
+  </div>
+))}
 
               <div className="settlement flat-list">
                 <h3><Save size={18} />最少轉帳方案</h3>
