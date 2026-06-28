@@ -229,8 +229,12 @@ export default function App() {
   }, [data, tripId]);
 
   const activeDay = data.days.find((day) => day.id === activeDayId) || data.days[0];
-  const activeSpot = data.spots[activeSpotId] || {};
-  const activeDayIndex = data.days.findIndex((day) => day.id === activeDayId);
+const activeSpot = data.spots[activeSpotId] || {};
+const activeDayIndex = data.days.findIndex((day) => day.id === activeDayId);
+
+const dayItems = Array.isArray(activeDay?.items)
+  ? activeDay.items
+  : Object.values(activeDay?.items || {});
 
 function goToDayByIndex(index) {
   const nextDay = data.days[index];
@@ -443,11 +447,12 @@ function goNextDay() {
   </button>
 </div>
               <div className="timeline">
-{(Array.isArray(activeDay.items) ? activeDay.items : Object.values(activeDay.items || {})).map((item, index) => (                  <button
-                    key={`${activeDay.id}-${index}`}
-                    className={`timeline-item ${item.spotId === activeSpotId ? "selected" : ""}`}
-                    onClick={() => selectSpot(item.spotId)}
-                  >
+{dayItems.map((item, index) => (
+  <button
+    key={`${activeDay.id}-${index}`}
+    className={`timeline-item ${item.spotId === activeSpotId ? "selected" : ""}`}
+    onClick={() => selectSpot(item.spotId)}
+  >
                     <div className="time-dot">
                       <span>{item.time}</span>
                       <i>{pillIcon(item.type)}</i>
