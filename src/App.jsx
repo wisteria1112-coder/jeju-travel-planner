@@ -224,9 +224,9 @@ export default function App() {
 
   const activeDay = data.days.find((day) => day.id === activeDayId) || data.days[0];
   const activeSpot = data.spots[activeSpotId] || {};
-  const { balances, transfers } = useMemo(
-    return calculateSettlements(data.expenses || []), data.participants);
-}, [(data.expenses || []), data.participants]);
+  const { balances, transfers } = useMemo(() => {
+  return calculateSettlements(data.expenses || [], data.participants || []);
+}, [data.expenses, data.participants]);
 
   function openDay(dayId) {
     const day = data.days.find((d) => d.id === dayId);
