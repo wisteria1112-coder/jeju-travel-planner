@@ -54,6 +54,9 @@ function getInitialData() {
 }
 
 function calculateSettlements(expenses, participants) {
+  expenses = expenses || [];
+  participants = participants || [];
+
   const balances = Object.fromEntries(participants.map((p) => [p.id, 0]));
 
   expenses.forEach((expense) => {
@@ -514,7 +517,7 @@ export default function App() {
   <p className="empty">尚無支出</p>
 )}
 
-{(data.expenses || []) => (
+{(data.expenses || []).map((expense) => (
   <div className="expense-row" key={expense.id}>
     <div>
       <strong>{expense.title}</strong>
