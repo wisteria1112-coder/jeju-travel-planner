@@ -230,6 +230,33 @@ export default function App() {
 
   const activeDay = data.days.find((day) => day.id === activeDayId) || data.days[0];
   const activeSpot = data.spots[activeSpotId] || {};
+  const activeDayIndex = data.days.findIndex((day) => day.id === activeDayId);
+
+function goToDayByIndex(index) {
+  const nextDay = data.days[index];
+  if (!nextDay) return;
+
+  setActiveDayId(nextDay.id);
+
+  const firstSpotId = nextDay.items?.[0]?.spotId;
+  if (firstSpotId) {
+    setActiveSpotId(firstSpotId);
+  }
+
+  setView("itinerary");
+}
+
+function goPrevDay() {
+  if (activeDayIndex > 0) {
+    goToDayByIndex(activeDayIndex - 1);
+  }
+}
+
+function goNextDay() {
+  if (activeDayIndex < data.days.length - 1) {
+    goToDayByIndex(activeDayIndex + 1);
+  }
+}
   const { balances, transfers } = useMemo(() => {
   return calculateSettlements(data.expenses || [], data.participants || []);
 }, [data.expenses, data.participants]);
@@ -397,7 +424,19 @@ export default function App() {
                 </div>
                 <span>{activeDay.mood}</span>
               </div>
+<div className="day-nav-buttons">
+  <button onClick={goPrevDay} disabled={activeDayIndex <= 0}>
+    ← 上一天
+  </button>
 
+  <strong>
+    Day {activeDayIndex + 1}
+  </strong>
+
+  <button onClick={goNextDay} disabled={activeDayIndex >= data.days.length - 1}>
+    下一天 →
+  </button>
+</div>
               <div className="timeline">
                 {activeDay.items.map((item, index) => (
                   <button
