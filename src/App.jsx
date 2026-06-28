@@ -108,8 +108,14 @@ function nameOf(participants, id) {
 
 
 function naverMapUrl(spot) {
-  const query = encodeURIComponent(spot?.naverQuery || spot?.name || "");
-  return `https://map.naver.com/p/search/${query}`;
+  const appname = "jeju-travel-planner-eosin.vercel.app";
+  const name = encodeURIComponent(spot?.naverQuery || spot?.name || "");
+
+  if (spot?.lat && spot?.lng) {
+    return `nmap://route/public?dlat=${spot.lat}&dlng=${spot.lng}&dname=${name}&appname=${appname}`;
+  }
+
+  return `nmap://search?query=${name}&appname=${appname}`;
 }
 
 function pillIcon(type) {
