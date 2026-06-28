@@ -108,6 +108,8 @@ export const seedData = {
       name: "9.81 Park",
       area: "涯月",
       naverQuery: "9.81파크 제주",
+      lat: 33.3906,
+      lng: 126.3666,
       tags: ["賽車", "活動"],
       intro: "主打智慧賽車與戶外體驗，適合安排 2–3 小時。天氣不穩時要先確認營運。"
     },
