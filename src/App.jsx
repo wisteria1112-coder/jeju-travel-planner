@@ -376,7 +376,7 @@ export default function App() {
               <h2>旅行記帳</h2>
               <button className="big-action" onClick={openBudget}>
                 <CreditCard size={22} />
-                打開記帳本與最少轉帳
+                打開記帳本
               </button>
             </section>
           </section>
