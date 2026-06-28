@@ -238,7 +238,12 @@ function goToDayByIndex(index) {
 
   setActiveDayId(nextDay.id);
 
-  const firstSpotId = nextDay.items?.[0]?.spotId;
+  const items = Array.isArray(nextDay.items)
+    ? nextDay.items
+    : Object.values(nextDay.items || {});
+
+  const firstSpotId = items[0]?.spotId;
+
   if (firstSpotId) {
     setActiveSpotId(firstSpotId);
   }
@@ -438,8 +443,7 @@ function goNextDay() {
   </button>
 </div>
               <div className="timeline">
-                {activeDay.items.map((item, index) => (
-                  <button
+{(Array.isArray(activeDay.items) ? activeDay.items : Object.values(activeDay.items || {})).map((item, index) => (                  <button
                     key={`${activeDay.id}-${index}`}
                     className={`timeline-item ${item.spotId === activeSpotId ? "selected" : ""}`}
                     onClick={() => selectSpot(item.spotId)}
