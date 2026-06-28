@@ -222,9 +222,8 @@ export default function App() {
   const activeDay = data.days.find((day) => day.id === activeDayId) || data.days[0];
   const activeSpot = data.spots[activeSpotId] || {};
   const { balances, transfers } = useMemo(
-    () => calculateSettlements(data.expenses, data.participants),
-    [data.expenses, data.participants]
-  );
+    return calculateSettlements(data.expenses || []), data.participants);
+}, [(data.expenses || []), data.participants]);
 
   function openDay(dayId) {
     const day = data.days.find((d) => d.id === dayId);
@@ -511,11 +510,11 @@ export default function App() {
               <div className="expense-list flat-list">
                 <h3>支出明細</h3>
 
-{data.expenses.length === 0 && (
+{(data.expenses || []).length === 0 && (
   <p className="empty">尚無支出</p>
 )}
 
-{data.expenses.map((expense) => (
+{(data.expenses || []) => (
   <div className="expense-row" key={expense.id}>
     <div>
       <strong>{expense.title}</strong>
