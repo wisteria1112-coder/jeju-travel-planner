@@ -203,8 +203,4 @@ export const seedData = {
       intro: "適合最後一晚採買伴手禮、吃小吃。住市區會非常方便。"
     }
   },
-  expenses: [
-    { id: "e1", title: "住宿訂金", amount: 6757, paidBy: "a", splitWith: ["a", "b", "c", "d", "e"], category: "住宿" },
-    { id: "e2", title: "早餐", amount: 1000, paidBy: "c", splitWith: ["a", "b", "c", "d", "e"], category: "餐飲" }
-  ]
-};
+ expenses: []
