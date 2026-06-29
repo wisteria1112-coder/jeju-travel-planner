@@ -1,14 +1,14 @@
 export const seedData = {
   meta: {
     title: "Jeju Island Trip",
-    subtitle: "橘子、海風、牛島與我們的五日小旅行",
+    subtitle: "橘子🍊、海風🏝️與我們的五日小旅行",
     dates: "2026.09.01 – 2026.09.05",
     hotel: "Cony Ocean Suite Hotel",
   },
   participants: [
     { id: "a", name: "Iris" },
     { id: "b", name: "梨寶" },
-    { id: "c", name: "Alice" },
+    { id: "c", name: "心禾禾" },
     { id: "d", name: "Cindy" },
     { id: "e", name: "小葵" }
   ],
@@ -17,26 +17,26 @@ export const seedData = {
       id: "day1",
       label: "Day 1",
       date: "9/1",
-      title: "市區＋涯月",
-      mood: "剛抵達也要玩滿！",
+      title: "橘子～大海～我們來了～",
+      mood: "特種部隊出動！",
       items: [
   {
     time: "23:50",
     title: "桃園機場集合",
     type: "transport",
-    spotId: "taoyuanAirport"
+    spotId: "TAOYUAN Airport"
   },
   {
     time: "02:50",
     title: "台灣起飛",
     type: "transport",
-    spotId: "taoyuanAirport"
+    spotId: "TAOYUAN Airport"
   },
   {
     time: "06:05",
     title: "抵達濟州機場",
     type: "transport",
-    spotId: "airport"
+    spotId: "JEJU Airport"
   },
   {
     time: "08:00",
@@ -86,8 +86,8 @@ export const seedData = {
       id: "day2",
       label: "Day 2",
       date: "9/2",
-      title: "南部／西歸浦",
-      mood: "橘子園、瀑布、南部散步",
+      title: "橘子的深度探索",
+      mood: "來都來了要了解一下🍊",
       items: [
         { time: "09:30", title: "Cafe Tangerine Flower Attic", spotId: "tangerineCafe", type: "cafe" },
         { time: "11:30", title: "橘子博物館", spotId: "citrusMuseum", type: "museum" },
