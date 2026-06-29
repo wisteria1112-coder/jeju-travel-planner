@@ -373,7 +373,48 @@ seopjikoji: {
       naverQuery: "제주 동문시장",
       tags: ["市場", "伴手禮", "宵夜"],
       intro: "適合最後一晚採買伴手禮、吃小吃。住市區會非常方便。"
-    }
+        }
   },
- expenses: []
+
+  haejigaeCafe: {
+    name: "Haejigae Cafe",
+    area: "涯月",
+    naverQuery: "해지개 제주",
+    lat: 33.4629,
+    lng: 126.3095,
+    tags: ["咖啡", "早餐", "海景"],
+    intro: "抵達濟州後的第一站咖啡廳，位於涯月海邊一帶，適合作為 Day 1 西部包車行程的開始。"
+  },
+
+  osulloc: {
+    name: "Osulloc 茶博物館",
+    area: "安德",
+    naverQuery: "오설록 티뮤지엄",
+    lat: 33.3059,
+    lng: 126.2895,
+    tags: ["茶", "甜點", "博物館"],
+    intro: "濟州西部知名茶文化景點，可以喝抹茶、逛茶園，也適合作為 Day 1 下午的休息點。"
+  },
+
+  yeomiji: {
+    name: "如美地植物園",
+    area: "中文觀光園區",
+    naverQuery: "여미지식물원",
+    lat: 33.2526,
+    lng: 126.4143,
+    tags: ["植物園", "拍照", "室內"],
+    intro: "位於中文觀光園區的植物園，室內外都可逛，適合排在西部／南部行程中。"
+  },
+
+  hundo: {
+    name: "薰陶 濟州黑豬肉專門店",
+    area: "涯月",
+    naverQuery: "훈도 애월흑돼지",
+    lat: 33.4637,
+    lng: 126.3112,
+    tags: ["晚餐", "黑豬肉", "烤肉"],
+    intro: "Day 1 晚餐，安排在西部包車行程結束後，作為第一天收尾。"
+  }
+},
+expenses: []
 };
