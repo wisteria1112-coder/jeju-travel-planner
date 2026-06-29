@@ -44,44 +44,43 @@ export const seedData = {
     type: "hotel",
     spotId: "hotel"
   },
-  {
-    time: "09:00",
-    title: "London Bagel Museum Jeju",
-    type: "food",
-    spotId: "bagel"
-  },
-    {
-    time: "10:30",
-    title: "萬丈窟",
-    type: "sight",
-    spotId: "manjanggul"
-  },
-  {
-    time: "12:00",
-    title: "城山日出峰",
-    type: "sight",
-    spotId: "seongsan"
-  },
-  {
-    time: "14:00",
-    title: "午餐｜어우름제주고기국수 성산본점",
-    type: "food",
-    spotId: "eoureumNoodles"
-  },
-  {
-    time: "15:30",
-    title: "涉地可支",
-    type: "sight",
-    spotId: "seopjikoji"
-  },
-  {
-    time: "18:00",
-    title: "回 Cony Ocean Suite Hotel 休息",
-    type: "hotel",
-    spotId: "hotel"
-  }
-],
+  time: "09:00",
+        title: "Haejigae Cafe",
+        type: "food",
+        spotId: "haejigaeCafe"
       },
+      {
+        time: "11:00",
+        title: "9.81 Park 賽車",
+        type: "activity",
+        spotId: "park981"
+      },
+      {
+        time: "12:30",
+        title: "Osulloc 茶博物館",
+        type: "sight",
+        spotId: "osulloc"
+      },
+      {
+        time: "15:00",
+        title: "如美地植物園",
+        type: "sight",
+        spotId: "yeomiji"
+      },
+      {
+        time: "18:00",
+        title: "晚餐｜薰陶 濟州黑豬肉專門店",
+        type: "food",
+        spotId: "hundo"
+      },
+      {
+        time: "20:00",
+        title: "回 Cony Ocean Suite Hotel 休息",
+        type: "hotel",
+        spotId: "hotel"
+      }
+    ]
+  },
 {
       id: "day2",
       label: "Day 2",
@@ -89,12 +88,50 @@ export const seedData = {
       title: "橘子的深度探索",
       mood: "來都來了要了解一下🍊",
       items: [
-        { time: "09:30", title: "Cafe Tangerine Flower Attic", spotId: "tangerineCafe", type: "cafe" },
-        { time: "11:30", title: "橘子博物館", spotId: "citrusMuseum", type: "museum" },
-        { time: "14:00", title: "正房瀑布", spotId: "jeongbang", type: "nature" },
-        { time: "17:30", title: "天地淵瀑布", spotId: "cheonjiyeon", type: "nature" }
-      ]
-    },
+      {
+        time: "08:00",
+        title: "早餐待確定",
+        type: "food",
+        spotId: "breakfastTBD"
+      },
+      {
+        time: "09:30",
+        title: "漢拏山國立公園",
+        type: "nature",
+        spotId: "hallasan"
+      },
+      {
+        time: "12:30",
+        title: "午餐待確定",
+        type: "food",
+        spotId: "lunchTBD"
+      },
+      {
+        time: "14:00",
+        title: "正房瀑布",
+        type: "sight",
+        spotId: "jeongbang"
+      },
+      {
+        time: "15:30",
+        title: "天地淵瀑布",
+        type: "sight",
+        spotId: "cheonjeyeon"
+      },
+      {
+        time: "17:30",
+        title: "橘花閣樓",
+        type: "cafe",
+        spotId: "orangeLoft"
+        {
+        time: "19:00",
+        title: "晚餐待確定",
+        type: "food",
+        spotId: "dinnerTBD"
+      }
+    ]
+  },
+
     {
       id: "day3",
       label: "Day 3",
@@ -102,13 +139,38 @@ export const seedData = {
       title: "牛島一整天",
       mood: "離島日排中間，天氣不好還能改",
       items: [
-        { time: "07:30", title: "出發前往城山港", spotId: "seongsanPort", type: "transport" },
-        { time: "09:00", title: "搭船前往牛島", spotId: "udo", type: "island" },
-        { time: "10:00", title: "牛島環島", spotId: "udo", type: "island" },
-        { time: "14:00", title: "牛島快艇", spotId: "udoJetboat", type: "activity" },
-        { time: "17:00", title: "回本島 / 回飯店休息", spotId: "hotel", type: "hotel" }
-      ]
-    },
+      {
+        time: "07:30",
+        title: "出發前往城山港",
+        type: "transport",
+        spotId: "seongsanPort"
+      },
+      {
+        time: "09:00",
+        title: "搭船前往牛島",
+        type: "transport",
+        spotId: "udo"
+      },
+      {
+        time: "10:00",
+        title: "牛島環島",
+        type: "island",
+        spotId: "udo"
+      },
+      {
+        time: "14:00",
+        title: "牛島快艇／島上活動",
+        type: "activity",
+        spotId: "udoJetboat"
+      },
+      {
+        time: "17:00",
+        title: "回本島／回飯店休息",
+        type: "hotel",
+        spotId: "hotel"
+      }
+    ]
+  },
     {
       id: "day4",
       label: "Day 4",
@@ -116,13 +178,39 @@ export const seedData = {
       title: "東部本島",
       mood: "史努比、水族館、城山日落",
       items: [
-        { time: "09:30", title: "史努比花園", spotId: "snoopy", type: "theme" },
-        { time: "13:00", title: "濟州水族館", spotId: "aqua", type: "aquarium" },
-        { time: "16:30", title: "城山日出峰", spotId: "seongsan", type: "nature" },
-        { time: "19:00", title: "東門市場", spotId: "dongmun", type: "market" }
-      ]
-    },
-    {
+      {
+        time: "08:30",
+        title: "早餐｜London Bagel Museum Jeju",
+        type: "food",
+        spotId: "bagel"
+      },
+      {
+        time: "10:30",
+        title: "萬丈窟",
+        type: "sight",
+        spotId: "manjanggul"
+      },
+      {
+        time: "12:30",
+        title: "城山日出峰",
+        type: "sight",
+        spotId: "seongsan"
+      },
+      {
+        time: "14:00",
+        title: "午餐｜어우름제주고기국수 성산본점",
+        type: "food",
+        spotId: "eoureumNoodles"
+      },
+      {
+        time: "15:30",
+        title: "水族館",
+        type: "sight",
+        spotId: "aqurameseum"
+      }
+    ]
+  },
+
       id: "day5",
       label: "Day 5",
       date: "9/5",
