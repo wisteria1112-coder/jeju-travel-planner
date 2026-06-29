@@ -267,12 +267,17 @@ function goNextDay() {
 }, [data.expenses, data.participants]);
 
   function openDay(dayId) {
-   const day = days.find((d) => d.id === dayId);
-    setActiveDayId(dayId);
-    setActiveSpotId(items?.[0]?.spotId || activeSpotId);
-    setView("day");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  const day = days.find((d) => d.id === dayId);
+  setActiveDayId(dayId);
+
+  const items = Array.isArray(day?.items)
+    ? day.items
+    : Object.values(day?.items || {});
+
+  setActiveSpotId(items[0]?.spotId || activeSpotId);
+  setView("day");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
   function openBudget() {
     setView("budget");
