@@ -284,13 +284,6 @@ seopjikoji: {
       tags: ["水族館", "室內"],
       intro: "東部室內景點，下雨備案也很好用。可跟城山日出峰同一天。"
     },
-    seongsan: {
-      name: "城山日出峰",
-      area: "城山",
-      naverQuery: "성산일출봉",
-      tags: ["世界自然景觀", "登高"],
-      intro: "濟州東部代表景點，可排在牛島回程 optional，或 Day 4 東部本島日。"
-    },
     dongmun: {
       name: "東門市場",
       area: "濟州市",
