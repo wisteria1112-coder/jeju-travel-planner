@@ -119,23 +119,17 @@ export const seedData = {
         type: "sight",
         spotId: "cheonjeyeon"
       },
-      {
+            {
         time: "17:30",
         title: "橘花閣樓",
         type: "cafe",
         spotId: "orangeLoft"
-        {
-        time: "19:00",
-        title: "晚餐待確定",
-        type: "food",
-        spotId: "dinnerTBD"
       }
     ]
   },
-
-    {
-      id: "day3",
-      label: "Day 3",
+  {
+    id: "day3",
+    label: "Day 3",
       date: "9/3",
       title: "牛島一日遊",
       mood: "熱知識：牛島長的像牛",
