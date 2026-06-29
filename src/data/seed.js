@@ -47,7 +47,7 @@ export const seedData = {
   time: "09:00",
         title: "Haejigae Cafe",
         type: "food",
-        spotId: "haejigaeCafe"
+        spotId: "haejigae Cafe"
       },
       {
         time: "11:00",
@@ -136,14 +136,14 @@ export const seedData = {
       id: "day3",
       label: "Day 3",
       date: "9/3",
-      title: "牛島一整天",
-      mood: "離島日排中間，天氣不好還能改",
+      title: "牛島一日遊",
+      mood: "熱知識：牛島長的像牛",
       items: [
       {
         time: "07:30",
         title: "出發前往城山港",
         type: "transport",
-        spotId: "seongsanPort"
+        spotId: "seongsan Port"
       },
       {
         time: "09:00",
@@ -175,8 +175,8 @@ export const seedData = {
       id: "day4",
       label: "Day 4",
       date: "9/4",
-      title: "東部本島",
-      mood: "史努比、水族館、城山日落",
+      title: "水..咕嚕咕嚕..族..咕嚕..館",
+      mood: "聽說有動物表演",
       items: [
       {
         time: "08:30",
