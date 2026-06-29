@@ -209,8 +209,8 @@ export const seedData = {
       id: "day5",
       label: "Day 5",
       date: "9/5",
-      title: "回程",
-      mood: "早班機，不排景點",
+      title: "回去當牛馬",
+      mood: "該面對現實",
       items: [
         { time: "07:40", title: "退房叫車", spotId: "terrace", type: "hotel" },
         { time: "08:20", title: "抵達濟州機場", spotId: "airport", type: "flight" },
