@@ -1100,7 +1100,7 @@ main {
 }
 
 .spot-image.has-image img {
-  width: 70% !important;
+  width: 55% !important;
   height: auto !important;
   max-height: 80% !important;
   object-fit: contain !important;
