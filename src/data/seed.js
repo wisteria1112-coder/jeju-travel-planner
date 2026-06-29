@@ -81,6 +81,8 @@ export const seedData = {
     spotId: "hotel"
   }
 ],
+      },
+{
       id: "day2",
       label: "Day 2",
       date: "9/2",
