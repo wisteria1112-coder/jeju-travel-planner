@@ -488,9 +488,7 @@ function goNextDay() {
 
             <aside className="spot-panel solo-spot" id="spot-card">
               <div className="sticker">SPOT NOTE</div>
-              <div
-<div className={`spot-image ${activeSpot.image ? "has-image" : ""}`}>
-  {activeSpot.image ? (
+<div className={`spot-image ${activeSpot.image ? "has-image" : ""}`}>  {activeSpot.image ? (
     <img
       className="spot-image-img"
       src={activeSpot.image}
