@@ -228,23 +228,19 @@ export default function App() {
     return () => window.clearTimeout(handle);
   }, [data, tripId]);
 
-  const activeDay = data.days.find((day) => day.id === activeDayId) || data.days[0];
-const activeSpot = data.spots[activeSpotId] || {};
-const activeDayIndex = data.days.findIndex((day) => day.id === activeDayId);
+  const days = Array.isArray(data.days)
+  ? data.days
+  : Object.values(data.days || {});
+
+const spots = data.spots || {};
+
+const activeDay = days.find((day) => day.id === activeDayId) || days[0] || {};
+const activeSpot = spots[activeSpotId] || {};
+const activeDayIndex = days.findIndex((day) => day.id === activeDayId);
 
 const dayItems = Array.isArray(activeDay?.items)
   ? activeDay.items
   : Object.values(activeDay?.items || {});
-
-function goToDayByIndex(index) {
-  const nextDay = data.days[index];
-  if (!nextDay) return;
-
-  setActiveDayId(nextDay.id);
-
-  const items = Array.isArray(nextDay.items)
-    ? nextDay.items
-    : Object.values(nextDay.items || {});
 
   const firstSpotId = items[0]?.spotId;
 
@@ -262,7 +258,7 @@ function goPrevDay() {
 }
 
 function goNextDay() {
-  if (activeDayIndex < data.days.length - 1) {
+  if (activeDayIndex < days.length - 1) {
     goToDayByIndex(activeDayIndex + 1);
   }
 }
@@ -442,7 +438,7 @@ function goNextDay() {
     Day {activeDayIndex + 1}
   </strong>
 
-  <button onClick={goNextDay} disabled={activeDayIndex >= data.days.length - 1}>
+  <button onClick={goNextDay} disabled={activeDayIndex >= days.length - 1}>
     下一天 →
   </button>
 </div>
