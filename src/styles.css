@@ -1123,3 +1123,6 @@ main {
   object-fit: contain !important;
   display: block !important;
 }
+.spot-panel p {
+  white-space: pre-line;
+}
