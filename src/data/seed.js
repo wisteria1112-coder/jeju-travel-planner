@@ -3,8 +3,7 @@ export const seedData = {
     title: "Jeju Island Trip",
     subtitle: "橘子、海風、牛島與我們的五日小旅行",
     dates: "2026.09.01 – 2026.09.05",
-    hotel: "Jeju The Terrace View",
-    note: "四晚住同一間，遠程日以包車 / 大型計程車為主。"
+    hotel: "Cony Ocean Suite Hotel",
   },
   participants: [
     { id: "a", name: "Iris" },
@@ -21,21 +20,67 @@ export const seedData = {
       title: "市區＋涯月",
       mood: "剛抵達也要玩滿！",
       items: [
-        {
-  time: "23:50",
-  title: "桃園機場集合",
-  type: "transport",
-  spotId: "taoyuanAirport"
-},
-        { time: "06:05", title: "抵達濟州機場", spotId: "airport", type: "flight" },
-        { time: "08:00", title: "飯店寄放行李", spotId: "terrace", type: "hotel" },
-        { time: "10:00", title: "London Bagel Museum", spotId: "bagel", type: "food" },
-        { time: "13:00", title: "9.81 Park 智慧賽車", spotId: "park981", type: "activity" },
-        { time: "16:00", title: "Haejigae 海景咖啡", spotId: "haejigae", type: "cafe" },
-        { time: "18:30", title: "燻陶 훈도 晚餐", spotId: "hundo", type: "food" }
-      ]
-    },
-    {
+  {
+    time: "23:50",
+    title: "桃園機場集合",
+    type: "transport",
+    spotId: "taoyuanAirport"
+  },
+  {
+    time: "02:50",
+    title: "台灣起飛",
+    type: "transport",
+    spotId: "taoyuanAirport"
+  },
+  {
+    time: "06:05",
+    title: "抵達濟州機場",
+    type: "transport",
+    spotId: "airport"
+  },
+  {
+    time: "08:00",
+    title: "Cony Ocean Suite Hotel 寄放行李",
+    type: "hotel",
+    spotId: "hotel"
+  },
+  {
+    time: "09:00",
+    title: "London Bagel Museum Jeju",
+    type: "food",
+    spotId: "bagel"
+  },
+  {
+    time: "10:30",
+    title: "萬丈窟",
+    type: "sight",
+    spotId: "manjanggul"
+  },
+  {
+    time: "12:00",
+    title: "午餐｜어우름제주고기국수 성산본점",
+    type: "food",
+    spotId: "eoureumNoodles"
+  },
+  {
+    time: "13:30",
+    title: "城山日出峰",
+    type: "sight",
+    spotId: "seongsan"
+  },
+  {
+    time: "15:30",
+    title: "涉地可支",
+    type: "sight",
+    spotId: "seopjikoji"
+  },
+  {
+    time: "18:00",
+    title: "回 Cony Ocean Suite Hotel 休息",
+    type: "hotel",
+    spotId: "hotel"
+  }
+],
       id: "day2",
       label: "Day 2",
       date: "9/2",
@@ -114,43 +159,66 @@ export const seedData = {
       tags: ["機場", "行李", "回程"],
       intro: "第一天先處理行李與交通，最後一天因為早班機，住宿靠市區會最安心。"
     },
-    terrace: {
-      name: "Jeju The Terrace View",
-      area: "蓮洞 / 濟州市",
-      naverQuery: "제주 더 테라스뷰",
-      tags: ["住宿", "市區基地"],
-      intro: "四晚同住的穩定方案。適合五人旅行、行李多、最後一天早班機。"
-    },
-    bagel: {
-      name: "London Bagel Museum",
-      area: "濟州市",
-      naverQuery: "런던베이글뮤지엄 제주",
-      tags: ["早餐", "排隊名店"],
-      intro: "熱門貝果店，建議早點去。可以當第一天抵達後的第一個可愛行程。"
-    },
-    park981: {
-      name: "9.81 Park",
-      area: "涯月",
-      naverQuery: "9.81파크 제주",
-      lat: 33.3906,
-      lng: 126.3666,
-      tags: ["賽車", "活動"],
-      intro: "主打智慧賽車與戶外體驗，適合安排 2–3 小時。天氣不穩時要先確認營運。"
-    },
-    haejigae: {
-      name: "Haejigae",
-      area: "涯月",
-      naverQuery: "해지개 애월",
-      tags: ["海景咖啡", "夕陽"],
-      intro: "海景咖啡廳，適合放在涯月行程的下午或傍晚，拍照氛圍很好。"
-    },
-    hundo: {
-      name: "燻陶 훈도",
-      area: "涯月",
-      naverQuery: "훈도 애월",
-      tags: ["黑豬肉", "晚餐"],
-      intro: "濟州黑豬肉餐廳。適合 Day 1 西部/涯月日結尾。"
-    },
+    hotel: {
+  name: "Cony Ocean Suite Hotel",
+  area: "涯月",
+  naverQuery: "Cony Ocean Suite Hotel 제주",
+  lat: 33.4849,
+  lng: 126.3678,
+  image: "/hotel-cony.png",
+  tags: ["住宿", "海景", "休息"],
+  intro: "位於涯月的海邊住宿。第一天東部包車行程結束後回飯店 check-in、整理行李與休息。地址：79, Gamundong-gil, Aewol-eup, Jeju。"
+},
+bagel: {
+  name: "London Bagel Museum Jeju",
+  area: "舊左",
+  naverQuery: "런던베이글뮤지엄 제주점",
+  lat: 33.5537,
+  lng: 126.7099,
+  image: "/london-bagel.png",
+  tags: ["早餐", "咖啡", "貝果"],
+  intro: "第一天抵達濟州後的早餐點，位於舊左邑東福路一帶，適合先補充體力再開始東部包車行程。"
+},
+manjanggul: {
+  name: "萬丈窟",
+  area: "舊左",
+  naverQuery: "만장굴",
+  lat: 33.5291,
+  lng: 126.7714,
+  image: "/manjanggul.png",
+  tags: ["自然", "洞窟", "世界遺產"],
+  intro: "濟州代表性的熔岩洞窟景點，適合安排約 1–1.5 小時。第一天包車前往東部時順路安排。"
+},
+eoureumNoodles: {
+  name: "어우름제주고기국수 성산본점",
+  area: "城山",
+  naverQuery: "어우름제주고기국수 성산본점",
+  lat: 33.4609,
+  lng: 126.9336,
+  image: "/eoureum-noodles.png",
+  tags: ["午餐", "濟州豬肉麵", "城山"],
+  intro: "位於城山日出峰附近的午餐點，主打濟州 고기국수。安排在萬丈窟之後、城山日出峰之前很順。"
+},
+seongsan: {
+  name: "城山日出峰",
+  area: "城山",
+  naverQuery: "성산일출봉",
+  lat: 33.4581,
+  lng: 126.9425,
+  image: "/seongsan.png",
+  tags: ["自然", "海景", "世界遺產"],
+  intro: "濟州東部代表景點，可以視體力選擇登頂，或只在周邊拍照、看海景。"
+},
+seopjikoji: {
+  name: "涉地可支",
+  area: "城山",
+  naverQuery: "섭지코지",
+  lat: 33.4242,
+  lng: 126.9306,
+  image: "/seopjikoji.png",
+  tags: ["海岸", "散步", "拍照"],
+  intro: "城山日出峰附近的海岸景點，適合散步、拍照，放在城山日出峰後面很順。"
+},
     tangerineCafe: {
       name: "Cafe Tangerine Flower Attic",
       area: "西歸浦",
