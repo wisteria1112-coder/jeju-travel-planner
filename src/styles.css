@@ -469,12 +469,7 @@ main {
   padding: 0;
 }
 
-.spot-image.has-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
+
 
 .spot-image span {
   font-size: 78px;
@@ -483,10 +478,11 @@ main {
 }
 
 .spot-image.has-image img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
   display: block;
+  margin: auto;
 }
 
 .spot-image.has-image span {
