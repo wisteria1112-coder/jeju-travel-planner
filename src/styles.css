@@ -478,10 +478,11 @@ main {
   color: var(--orange-strong);
 }
 
-.spot-image.has-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.spot-image.has-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .spot-image.has-image span {
