@@ -7,6 +7,7 @@ import {
   CreditCard,
   Heart,
   Home,
+  Hotel,
   MapPin,
   Navigation,
   Pencil,
