@@ -1090,3 +1090,20 @@ main {
   box-shadow: 0 16px 36px rgba(36, 67, 90, 0.12);
   border: 2px solid rgba(255, 200, 220, 0.75);
 }
+.spot-image.has-image {
+  background: #fff;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spot-image.has-image img {
+  width: 70% !important;
+  height: auto !important;
+  max-height: 80% !important;
+  object-fit: contain !important;
+  display: block;
+  margin: auto;
+}
