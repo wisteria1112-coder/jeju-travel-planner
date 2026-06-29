@@ -500,9 +500,9 @@ function goNextDay() {
   )}
 </div>
               <p className="section-kicker">{activeSpot.area || "Jeju"}</p>
-              <h2>{activeSpot.name || "選擇一個景點"}</h2>
+              <h2>{activeSpot.name || "濟州機場"}</h2>
             
-              <p>{activeSpot.intro || "點選時間軸上的景點，這裡會顯示介紹。"}</p>
+              <p>{activeSpot.intro || "有時間的話拍個轉場。"}</p>
 
               <div className="tag-row">
                 {(activeSpot.tags || []).map((tag) => (
