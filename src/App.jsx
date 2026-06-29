@@ -383,7 +383,7 @@ function goNextDay() {
 
               <div className="hero-chips">
                 <span><CalendarDays size={16} />{data.meta.dates}</span>
-                <span><MapPin size={16} />{data.meta.hotel}</span>
+                <span><Hotel size={16} />{data.meta.hotel}</span>
                 <span><Heart size={16} />五人共用</span>
               </div>
             </div>
