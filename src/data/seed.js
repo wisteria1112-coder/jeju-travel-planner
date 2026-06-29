@@ -24,13 +24,13 @@ export const seedData = {
     time: "23:50",
     title: "桃園機場集合",
     type: "transport",
-    spotId: "TAOYUAN Airport"
+    spotId: "taoyuanAirport"
   },
   {
     time: "02:50",
     title: "台灣起飛",
     type: "transport",
-    spotId: "TAOYUAN Airport"
+    spotId: "taoyuanAirport"
   },
   {
     time: "06:05",
@@ -44,6 +44,7 @@ export const seedData = {
     type: "hotel",
     spotId: "hotel"
   },
+  {
   time: "09:00",
         title: "Haejigae Cafe",
         type: "food",
@@ -78,11 +79,10 @@ export const seedData = {
         title: "回 Cony Ocean Suite Hotel 休息",
         type: "hotel",
         spotId: "hotel"
-      }
-    ]
+       ]
   },
-{
-      id: "day2",
+  {
+    id: "day2",
       label: "Day 2",
       date: "9/2",
       title: "橘子的深度探索",
