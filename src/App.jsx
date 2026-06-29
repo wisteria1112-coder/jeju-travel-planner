@@ -267,9 +267,9 @@ function goNextDay() {
 }, [data.expenses, data.participants]);
 
   function openDay(dayId) {
-    const day = data.days.find((d) => d.id === dayId);
+   const day = days.find((d) => d.id === dayId);
     setActiveDayId(dayId);
-    setActiveSpotId(day?.items?.[0]?.spotId || activeSpotId);
+    setActiveSpotId(items?.[0]?.spotId || activeSpotId);
     setView("day");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -393,7 +393,7 @@ function goNextDay() {
               <p className="section-kicker">Timeline</p>
               <h2>選擇日期</h2>
               <div className="day-menu">
-                {data.days.map((day) => (
+                {days.map((day) => (
                   <button key={day.id} onClick={() => openDay(day.id)}>
                     <span>{day.label}</span>
                     <b>{day.date}</b>
