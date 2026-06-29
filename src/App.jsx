@@ -242,13 +242,23 @@ const dayItems = Array.isArray(activeDay?.items)
   ? activeDay.items
   : Object.values(activeDay?.items || {});
 
+  function goToDayByIndex(index) {
+  const nextDay = days[index];
+  if (!nextDay) return;
+
+  setActiveDayId(nextDay.id);
+
+  const items = Array.isArray(nextDay.items)
+    ? nextDay.items
+    : Object.values(nextDay.items || {});
+
   const firstSpotId = items[0]?.spotId;
 
   if (firstSpotId) {
     setActiveSpotId(firstSpotId);
   }
 
-  setView("itinerary");
+  setView("day");
 }
 
 function goPrevDay() {
