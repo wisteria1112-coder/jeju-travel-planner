@@ -460,16 +460,20 @@ main {
 }
 
 .spot-image {
-  height: 200px;
-  border-radius: 28px;
-  background:
-    radial-gradient(circle at 20% 25%, rgba(255, 184, 207, .9), transparent 28%),
-    radial-gradient(circle at 80% 20%, rgba(143, 211, 255, .85), transparent 30%),
-    linear-gradient(135deg, #fff1e1, #e5f6ff);
-  display: grid;
-  place-items: center;
-  border: 4px solid #fff;
-  margin-bottom: 18px;
+  height: 300px;
+}
+
+.spot-image.has-image {
+  background: #fff;
+  overflow: hidden;
+  padding: 0;
+}
+
+.spot-image.has-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .spot-image span {
