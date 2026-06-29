@@ -476,7 +476,16 @@ main {
   font-size: 78px;
   font-family: "Baloo 2";
   color: var(--orange-strong);
-  text-shadow: 3px 3px 0 #fff;
+}
+
+.spot-image.has-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.spot-image.has-image span {
+  display: none;
 }
 
 .spot-panel p {
