@@ -202,10 +202,10 @@ export const seedData = {
         title: "水族館",
         type: "sight",
         spotId: "aqurameseum"
-      }
+       }
     ]
   },
-
+  {
       id: "day5",
       label: "Day 5",
       date: "9/5",
