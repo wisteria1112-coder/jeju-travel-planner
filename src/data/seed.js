@@ -21,6 +21,12 @@ export const seedData = {
       title: "市區＋涯月",
       mood: "剛抵達也要玩滿！",
       items: [
+        {
+  time: "23:50",
+  title: "桃園機場集合",
+  type: "transport",
+  spotId: "taoyuanAirport"
+},
         { time: "06:05", title: "抵達濟州機場", spotId: "airport", type: "flight" },
         { time: "08:00", title: "飯店寄放行李", spotId: "terrace", type: "hotel" },
         { time: "10:00", title: "London Bagel Museum", spotId: "bagel", type: "food" },
@@ -83,6 +89,23 @@ export const seedData = {
     }
   ],
   spots: {
+        taoyuanAirport: {
+      name: "桃園機場",
+      area: "台灣",
+      naverQuery: "桃園國際機場",
+      tags: ["集合", "出國前準備"],
+      intro: "23:50 桃園機場集合。Iris、梨寶從宜蘭出發轉機捷；Cindy 從南港出發；Alice、小葵從高雄搭高鐵轉機捷。抵達後先完成 eSIM、外交部出國登錄與韓國 e-Arrival Card。",
+      links: [
+        {
+          label: "🛂 e-Arrival Card",
+          url: "https://www.e-arrivalcard.go.kr/portal/main/index.do?locale=CH"
+        },
+        {
+          label: "📱 外交部出國登錄 LINE",
+          url: "https://line.me/R/ti/p/@boca.tw"
+        }
+      ]
+    },
     airport: {
       name: "濟州國際機場",
       area: "濟州市",
