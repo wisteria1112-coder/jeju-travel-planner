@@ -377,7 +377,7 @@ function goNextDay() {
         {view === "home" && (
           <section className="screen home-screen">
             <div className="hero-card">
-              <p className="eyebrow"><Sparkles size={16} /> 可愛活潑濟州小旅行</p>
+              <p className="eyebrow"><Sparkles size={16} /> ASAASA第二次海外團建</p>
               <h1>{data.meta.title}</h1>
               <p className="hero-subtitle">{data.meta.subtitle}</p>
 
