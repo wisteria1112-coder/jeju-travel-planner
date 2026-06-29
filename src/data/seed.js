@@ -74,12 +74,13 @@ export const seedData = {
         type: "food",
         spotId: "hundo"
       },
-      {
+           {
         time: "20:00",
         title: "回 Cony Ocean Suite Hotel 休息",
         type: "hotel",
         spotId: "hotel"
-       ]
+      }
+    ]
   },
   {
     id: "day2",
