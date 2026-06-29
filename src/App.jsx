@@ -488,18 +488,21 @@ function goNextDay() {
 
             <aside className="spot-panel solo-spot" id="spot-card">
               <div className="sticker">SPOT NOTE</div>
-              <div className="spot-image">
-                <span>{activeSpot.name?.slice(0, 1) || "濟"}</span>
-              </div>
+              <div
+  className={`spot-image ${activeSpot.image ? "has-image" : ""}`}
+  style={
+    activeSpot.image
+      ? { backgroundImage: `url(${activeSpot.image})` }
+      : undefined
+  }
+>
+  {!activeSpot.image && (
+    <span>{activeSpot.name?.slice(0, 1) || "濟"}</span>
+  )}
+</div>
               <p className="section-kicker">{activeSpot.area || "Jeju"}</p>
               <h2>{activeSpot.name || "選擇一個景點"}</h2>
-              {activeSpot.image && (
-  <img
-    className="spot-main-image"
-    src={activeSpot.image}
-    alt={activeSpot.name}
-  />
-)}
+            
               <p>{activeSpot.intro || "點選時間軸上的景點，這裡會顯示介紹。"}</p>
 
               <div className="tag-row">
