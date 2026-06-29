@@ -50,7 +50,7 @@ export const seedData = {
     type: "food",
     spotId: "bagel"
   },
-  {
+    {
     time: "10:30",
     title: "萬丈窟",
     type: "sight",
@@ -58,15 +58,15 @@ export const seedData = {
   },
   {
     time: "12:00",
-    title: "午餐｜어우름제주고기국수 성산본점",
-    type: "food",
-    spotId: "eoureumNoodles"
-  },
-  {
-    time: "13:30",
     title: "城山日出峰",
     type: "sight",
     spotId: "seongsan"
+  },
+  {
+    time: "14:00",
+    title: "午餐｜어우름제주고기국수 성산본점",
+    type: "food",
+    spotId: "eoureumNoodles"
   },
   {
     time: "15:30",
