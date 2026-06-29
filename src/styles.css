@@ -479,7 +479,7 @@ main {
 
 .spot-image.has-image img {
   width: 80%;
-  height: 80%;
+  height: 50%;
   object-fit: contain;
   display: block;
   margin: auto;
