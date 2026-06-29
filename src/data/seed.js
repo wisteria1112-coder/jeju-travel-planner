@@ -36,7 +36,7 @@ export const seedData = {
     time: "06:05",
     title: "抵達濟州機場",
     type: "transport",
-    spotId: "JEJU Airport"
+    spotId: "airport"
   },
   {
     time: "08:00",
@@ -48,7 +48,7 @@ export const seedData = {
   time: "09:00",
         title: "Haejigae Cafe",
         type: "food",
-        spotId: "haejigae Cafe"
+        spotId: "haejigaeCafe"
       },
       {
         time: "11:00",
