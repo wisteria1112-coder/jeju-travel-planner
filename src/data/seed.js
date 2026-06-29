@@ -225,7 +225,7 @@ export const seedData = {
   naverQuery: "桃園國際機場",
   image: "/flight-ze886.png",
   tags: ["集合", "出國前準備"],
-  intro: "23:50 桃園機場集合。\nIris、梨寶從宜蘭出發轉機捷\nCindy 從南港出發\nAlice、小葵從高雄搭高鐵轉機捷\n抵達後先完成 eSIM、外交部出國登錄與韓國 e-Arrival Card。",
+  intro: "Iris、梨寶從宜蘭出發轉機捷\nCindy 從南港出發\nAlice、小葵從高雄搭高鐵轉機捷\n抵達後先完成 eSIM、外交部出國登錄與韓國 e-Arrival Card。",
   links: [
     {
       label: "🛂 e-Arrival Card",
