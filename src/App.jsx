@@ -493,6 +493,13 @@ function goNextDay() {
               </div>
               <p className="section-kicker">{activeSpot.area || "Jeju"}</p>
               <h2>{activeSpot.name || "選擇一個景點"}</h2>
+              {activeSpot.image && (
+  <img
+    className="spot-main-image"
+    src={activeSpot.image}
+    alt={activeSpot.name}
+  />
+)}
               <p>{activeSpot.intro || "點選時間軸上的景點，這裡會顯示介紹。"}</p>
 
               <div className="tag-row">
