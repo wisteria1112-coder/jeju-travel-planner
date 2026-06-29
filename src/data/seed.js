@@ -106,7 +106,7 @@ export const seedData = {
         { time: "09:00", title: "搭船前往牛島", spotId: "udo", type: "island" },
         { time: "10:00", title: "牛島環島", spotId: "udo", type: "island" },
         { time: "14:00", title: "牛島快艇", spotId: "udoJetboat", type: "activity" },
-        { time: "17:00", title: "回本島 / optional 城山日出峰", spotId: "seongsan", type: "nature" }
+        { time: "17:00", title: "回本島 / 回飯店休息", spotId: "hotel", type: "hotel" }
       ]
     },
     {
