@@ -510,6 +510,23 @@ function goNextDay() {
                 <Navigation size={19} />
                 用 Naver Map 導航
               </a>
+              {activeSpot.links?.length > 0 && (
+  <div className="spot-links">
+    <h4>快速連結</h4>
+
+    {activeSpot.links.map((link) => (
+      <a
+        key={link.url}
+        className="spot-link-button"
+        href={link.url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {link.label}
+      </a>
+    ))}
+  </div>
+)}
             </aside>
           </section>
         )}
