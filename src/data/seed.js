@@ -164,6 +164,12 @@ export const seedData = {
         type: "activity",
         spotId: "udoJetboat"
       },
+        {
+        time: "17:00",
+        title: "下牛木洞港搭船回濟州",
+        type: "transport",
+        spotId: "udoReturnPort"
+      },
       {
         time: "17:00",
         title: "回本島／回飯店休息",
@@ -522,7 +528,13 @@ checkoutTaxi: {
   tags: ["午餐", "待確認"],
   intro: "午餐尚未決定，之後可以依照當天路線、實際體力與附近餐廳再安排。"
 },
-
+    udoReturnPort: {
+  name: "木洞港搭船回濟州",
+  area: "牛島",
+  naverQuery: "우도 목동항",
+  tags: ["交通", "港口", "回程"],
+  intro: "牛島行程結束後，從木洞港搭船回到濟州本島。建議提前確認最後船班時間，避免錯過回程。"
+},
 flightDeparture: {
   name: "飛機起飛",
   area: "濟州國際機場",
