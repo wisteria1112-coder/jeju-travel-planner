@@ -153,6 +153,12 @@ export const seedData = {
         spotId: "udo"
       },
       {
+  time: "10:00",
+  title: "UDO SAND 花生冰淇淋",
+  type: "food",
+  spotId: "udoSand"
+},
+        {
         time: "10:00",
         title: "牛島環島",
         type: "island",
@@ -543,6 +549,16 @@ flightDeparture: {
   lng: 126.4929,
   tags: ["回程", "機場", "飛機"],
   intro: "回程班機起飛，建議提早抵達濟州國際機場辦理報到、托運與安檢。"
+  },
+  udoSand: {
+  name: "UDO SAND",
+  area: "牛島",
+  naverQuery: "우도샌드",
+  lat: 33.5068,
+  lng: 126.9555,
+  image: "/udo-sand.png",
+  tags: ["甜點", "花生冰淇淋", "牛島"],
+  intro: "牛島近年討論度很高的花生冰淇淋店"
 }    
 },
 expenses: []
