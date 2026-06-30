@@ -383,6 +383,7 @@ haejigaeCafe: {
   naverQuery: "해지개 제주",
   lat: 33.4629,
   lng: 126.3095,
+  image: "/haejigae-cafe.png",
   tags: ["咖啡", "早餐", "海景"],
   intro: "抵達濟州後的第一站咖啡廳，位於涯月海邊一帶，適合作為 Day 1 西部包車行程的開始。"
 },
