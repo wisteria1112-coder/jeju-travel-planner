@@ -606,6 +606,20 @@ udoBlackBeach: {
   tags: ["黑沙灘", "海岸", "拍照"],
   intro: "牛島知名黑沙灘，與白沙灘形成對比，適合拍照與看海岸地形。"
 },
+daiso: {
+  name: "大創",
+  area: "濟州",
+  naverQuery: "다이소 제주",
+  tags: ["購物", "生活用品", "伴手禮"],
+  intro: "韓國大創適合採買生活小物、旅行用品、零食與可愛雜貨。安排在 Olive Young 後面一起採買很順。"
+},
+oliveYoung: {
+  name: "Olive Young",
+  area: "濟州",
+  naverQuery: "올리브영 제주",
+  tags: ["藥妝", "購物", "伴手禮"],
+  intro: "韓國常見藥妝店，適合在 Day 4 水族館行程後採買保養品、零食與伴手禮。"
+},
   udoReturnPort: {
   name: "下牛木洞港",
   area: "牛島",
