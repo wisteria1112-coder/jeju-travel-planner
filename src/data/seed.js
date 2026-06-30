@@ -252,7 +252,7 @@ export const seedData = {
   lng: 126.3678,
   image: "/hotel-cony.png",
   tags: ["住宿", "海景", "休息"],
-  intro: "位於涯月的海景第一排\n抵達機場後叫車回飯店 check-in、整理行李與休息。\n地址：제주 제주시 애월읍 가문동길 79"
+  intro: "位於涯月的海景第一排\n抵達機場後叫車回飯店 check-in、整理行李與休息。\n地址：제주 제주시 애월읍 가문동길 79"\n自助報到密碼:3256
 },
 bagel: {
   name: "London Bagel Museum Jeju",
