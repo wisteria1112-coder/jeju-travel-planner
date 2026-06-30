@@ -187,7 +187,9 @@ export const seedData = {
       title: "回飯店休息",
       type: "hotel",
       spotId: "hotel"
-  },
+  }
+  ]
+},
 {
       id: "day4",
       label: "Day 4",
