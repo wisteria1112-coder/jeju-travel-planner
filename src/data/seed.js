@@ -373,6 +373,7 @@ seopjikoji: {
       name: "正房瀑布",
       area: "西歸浦",
       naverQuery: "정방폭포",
+      image: "/jeongbang.png",
       tags: ["瀑布", "海邊"],
       intro: "濟州代表性瀑布之一，白天去更適合拍照。"
     },
@@ -394,6 +395,7 @@ seopjikoji: {
       name: "牛島",
       area: "離島",
       naverQuery: "우도",
+      image: "/udo.png",
       tags: ["離島", "環島", "海景"],
       intro: "下船後可以買公車票，今天逆時針行駛。"
     },
@@ -423,6 +425,7 @@ seopjikoji: {
       name: "東門市場",
       area: "濟州市",
       naverQuery: "제주 동문시장",
+      image: "/dongmun.png",
       tags: ["市場", "伴手禮", "宵夜"],
       intro: "適合最後一晚採買伴手禮、吃小吃。住市區會非常方便。"
   },
