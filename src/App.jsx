@@ -311,10 +311,10 @@ function goNextDay() {
     if (!newExpense.title.trim() || !Number(newExpense.amount)) return;
 
     setData((current) => ({
-      ...current,
-      expenses: [
-        ...current.expenses,
-        {
+  ...current,
+  expenses: [
+    ...(current.expenses || []),
+    {
           id: createId("expense"),
           title: newExpense.title.trim(),
           amount: Number(newExpense.amount),
