@@ -53,45 +53,60 @@ function getInitialData() {
   }
   return seedData;
 }
+function calculateSettlements(expenses = [], participants = []) {
+  const balances = {};
 
-function calculateSettlements(expenses, participants) {
-  expenses = expenses || [];
-  participants = participants || [];
-
-  const balances = Object.fromEntries(participants.map((p) => [p.id, 0]));
+  participants.forEach((person) => {
+    balances[person.name] = 0;
+  });
 
   expenses.forEach((expense) => {
-    const amount = Number(expense.amount || 0);
-    const splitWith = expense.splitWith?.length ? expense.splitWith : participants.map((p) => p.id);
-    const share = amount / splitWith.length;
+    const amount = Number(expense.amount) || 0;
+    const payer = expense.payer || expense.paidBy;
 
-    balances[expense.paidBy] = (balances[expense.paidBy] || 0) + amount;
-    splitWith.forEach((id) => {
-      balances[id] = (balances[id] || 0) - share;
+    const splitWith =
+      expense.splitWith?.length > 0
+        ? expense.splitWith
+        : participants.map((person) => person.name);
+
+    const validSplitWith = splitWith.filter((name) => balances[name] !== undefined);
+
+    if (!payer || balances[payer] === undefined || validSplitWith.length === 0) return;
+
+    const share = amount / validSplitWith.length;
+
+    balances[payer] += amount;
+
+    validSplitWith.forEach((name) => {
+      balances[name] -= share;
     });
   });
 
-  const debtors = [];
   const creditors = [];
+  const debtors = [];
 
-  Object.entries(balances).forEach(([id, balance]) => {
+  Object.entries(balances).forEach(([name, balance]) => {
     const rounded = Math.round(balance);
-    if (rounded < 0) debtors.push({ id, amount: -rounded });
-    if (rounded > 0) creditors.push({ id, amount: rounded });
+
+    if (rounded > 0) {
+      creditors.push({ name, amount: rounded });
+    } else if (rounded < 0) {
+      debtors.push({ name, amount: Math.abs(rounded) });
+    }
   });
 
-  debtors.sort((a, b) => b.amount - a.amount);
-  creditors.sort((a, b) => b.amount - a.amount);
-
-  const transfers = [];
+  const settlements = [];
   let i = 0;
   let j = 0;
 
   while (i < debtors.length && j < creditors.length) {
     const amount = Math.min(debtors[i].amount, creditors[j].amount);
-    if (amount > 0) {
-      transfers.push({ from: debtors[i].id, to: creditors[j].id, amount });
-    }
+
+    settlements.push({
+      from: debtors[i].name,
+      to: creditors[j].name,
+      amount
+    });
 
     debtors[i].amount -= amount;
     creditors[j].amount -= amount;
@@ -100,9 +115,8 @@ function calculateSettlements(expenses, participants) {
     if (creditors[j].amount === 0) j += 1;
   }
 
-  return { balances, transfers };
+  return { balances, settlements };
 }
-
 function nameOf(participants, id) {
   return participants.find((p) => p.id === id)?.name || id;
 }
