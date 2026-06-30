@@ -581,8 +581,8 @@ function goNextDay() {
                   placeholder="金額，例如 2500"
                   inputMode="numeric"
                 />
-                <select
-                  value={newExpense.paidBy}
+               <select
+                 value={newExpense.payer}
                   onChange={(event) => setNewExpense({ ...newExpense, paidBy: event.target.value })}
                 >
                   {data.participants.map((person) => (
