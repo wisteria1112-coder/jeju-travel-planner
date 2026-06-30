@@ -378,14 +378,14 @@ seopjikoji: {
       intro: "適合最後一晚採買伴手禮、吃小吃。住市區會非常方便。"
   },
 haejigaeCafe: {
-  name: "Haejigae Cafe",
+  name: "Haejigae Café 夕陽咖啡廳",
   area: "涯月",
   naverQuery: "해지개 제주",
   lat: 33.4629,
   lng: 126.3095,
   image: "/haejigae-cafe.png",
   tags: ["咖啡", "早餐", "海景"],
-  intro: "抵達濟州後的第一站咖啡廳，位於涯月海邊一帶，適合作為 Day 1 西部包車行程的開始。"
+  intro: "室內韓屋風、室外海島風的人氣咖啡廳，雖然是觀夕陽出名但我們就是要早上去/n招牌：橘子蛋糕"
 },
 
 osulloc: {
