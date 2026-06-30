@@ -130,8 +130,9 @@ export const seedData = {
         title: "回飯店休息",
         type: "hotel",
         spotId: "hotel"
-    ]
-  },
+  }
+  ]
+        },
   {
     id: "day3",
     label: "Day 3",
