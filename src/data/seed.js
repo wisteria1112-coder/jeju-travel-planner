@@ -183,6 +183,12 @@ export const seedData = {
       spotId: "udoReturnPort"
     },
     {
+  time: "18:30",
+  title: "東門市場",
+  type: "food",
+  spotId: "dongmun"
+},
+    {
       time: "20:00",
       title: "回飯店休息",
       type: "hotel",
@@ -226,10 +232,27 @@ export const seedData = {
         title: "水族館",
         type: "sight",
         spotId: "aquarium"
-       }
-    ]
-  },
-  {
+        },
+        {
+  time: "17:30",
+  title: "Olive Young",
+  type: "shopping",
+  spotId: "oliveYoung"
+},
+{
+  time: "18:30",
+  title: "大創",
+  type: "shopping",
+  spotId: "daiso"
+},
+{
+  time: "20:00",
+  title: "回飯店休息",
+  type: "hotel",
+  spotId: "hotel"
+}
+},
+{
       id: "day5",
       label: "Day 5",
       date: "9/5",
