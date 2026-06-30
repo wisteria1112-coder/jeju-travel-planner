@@ -134,57 +134,61 @@ export const seedData = {
   ]
         },
   {
-    id: "day3",
-    label: "Day 3",
-      date: "9/3",
-      title: "牛島一日遊",
-      mood: "熱知識：牛島長的像牛",
-      items: [
-      {
-        time: "07:30",
-        title: "出發前往城山港",
-        type: "transport",
-        spotId: "seongsanPort"
-      },
-      {
-        time: "09:00",
-        title: "搭船前往牛島",
-        type: "transport",
-        spotId: "udo"
-      },
-      {
-  time: "10:00",
-  title: "UDO SAND 花生冰淇淋",
-  type: "food",
-  spotId: "udoSand"
-},
-        {
-        time: "10:00",
-        title: "牛島環島",
-        type: "island",
-        spotId: "udo"
-      },
-      {
-        time: "14:00",
-        title: "牛島快艇／島上活動",
-        type: "activity",
-        spotId: "udoJetboat"
-      },
-        {
-        time: "17:00",
-        title: "下牛木洞港搭船回濟州",
-        type: "transport",
-        spotId: "udoReturnPort"
-      },
-      {
-        time: "17:00",
-        title: "回本島／回飯店休息",
-        type: "hotel",
-        spotId: "hotel"
-      }
-    ]
-  },
+  id: "day3",
+  label: "Day 3",
+  date: "9/3",
+  title: "牛島一整天",
+  mood: "花生冰淇淋、白沙灘、黑沙灘，最後用快艇收尾！",
+  items: [
     {
+      time: "07:30",
+      title: "出發前往城山港",
+      type: "transport",
+      spotId: "seongsanPort"
+    },
+    {
+      time: "09:00",
+      title: "搭船前往牛島",
+      type: "transport",
+      spotId: "udo"
+    },
+    {
+      time: "10:00",
+      title: "UDO SAND 花生冰淇淋",
+      type: "food",
+      spotId: "udoSand"
+    },
+    {
+      time: "11:00",
+      title: "牛島白沙灘",
+      type: "sight",
+      spotId: "udoWhiteBeach"
+    },
+    {
+      time: "12:30",
+      title: "牛島黑沙灘",
+      type: "sight",
+      spotId: "udoBlackBeach"
+    },
+    {
+      time: "14:30",
+      title: "牛島快艇",
+      type: "activity",
+      spotId: "udoJetboat"
+    },
+    {
+      time: "17:00",
+      title: "下牛木洞港搭船回濟州",
+      type: "transport",
+      spotId: "udoReturnPort"
+    },
+    {
+      time: "20:00",
+      title: "回飯店休息",
+      type: "hotel",
+      spotId: "hotel"
+  },
+{
       id: "day4",
       label: "Day 4",
       date: "9/4",
@@ -559,7 +563,28 @@ flightDeparture: {
   image: "/udo-sand.png",
   tags: ["甜點", "花生冰淇淋", "牛島"],
   intro: "牛島近年討論度很高的花生冰淇淋店"
-}    
+  },
+  udoWhiteBeach: {
+  name: "牛島白沙灘",
+  area: "牛島",
+  naverQuery: "우도 산호해수욕장",
+  tags: ["白沙灘", "海景", "拍照"],
+  intro: "牛島代表性的白沙灘景點，適合散步、拍照，也很適合排在牛島行程前半段。"
+ },
+udoBlackBeach: {
+  name: "牛島黑沙灘",
+  area: "牛島",
+  naverQuery: "우도 검멀레해변",
+  tags: ["黑沙灘", "海岸", "拍照"],
+  intro: "牛島知名黑沙灘，與白沙灘形成對比，適合拍照與看海岸地形。"
+},
+  udoReturnPort: {
+  name: "下牛木洞港",
+  area: "牛島",
+  naverQuery: "우도 하우목동항",
+  tags: ["港口", "回程", "交通"],
+  intro: "牛島行程結束後，從下牛木洞港搭船回濟州本島。建議提前確認最後船班時間。"
+}
 },
 expenses: []
 };
