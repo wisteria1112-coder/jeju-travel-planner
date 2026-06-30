@@ -76,7 +76,7 @@ export const seedData = {
       },
            {
         time: "20:00",
-        title: "回 Cony Ocean Suite Hotel 休息",
+        title: "回飯店休息",
         type: "hotel",
         spotId: "hotel"
       }
@@ -124,7 +124,12 @@ export const seedData = {
         title: "橘花閣樓",
         type: "cafe",
         spotId: "orangeLoft"
-      }
+      },
+        {
+        time: "19:00",
+        title: "回飯店休息",
+        type: "hotel",
+        spotId: "hotel"
     ]
   },
   {
