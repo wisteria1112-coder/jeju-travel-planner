@@ -568,6 +568,7 @@ flightDeparture: {
   name: "牛島白沙灘",
   area: "牛島",
   naverQuery: "우도 산호해수욕장",
+  image: "/udoWhiteBeach.png",
   tags: ["白沙灘", "海景", "拍照"],
   intro: "牛島代表性的白沙灘景點，適合散步、拍照，也很適合排在牛島行程前半段。"
  },
@@ -575,6 +576,7 @@ udoBlackBeach: {
   name: "牛島黑沙灘",
   area: "牛島",
   naverQuery: "우도 검멀레해변",
+  image: "/udoBlackBeach.png",
   tags: ["黑沙灘", "海岸", "拍照"],
   intro: "牛島知名黑沙灘，與白沙灘形成對比，適合拍照與看海岸地形。"
 },
@@ -582,6 +584,7 @@ udoBlackBeach: {
   name: "下牛木洞港",
   area: "牛島",
   naverQuery: "우도 하우목동항",
+  image: "/udoReturnPort.png",
   tags: ["港口", "回程", "交通"],
   intro: "牛島行程結束後，從下牛木洞港搭船回濟州本島。建議提前確認最後船班時間。"
 }
