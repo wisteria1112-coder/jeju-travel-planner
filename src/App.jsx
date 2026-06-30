@@ -596,11 +596,6 @@ function goNextDay() {
                   onChange={(event) => setNewExpense({ ...newExpense, category: event.target.value })}
                   placeholder="分類，例如 餐飲 / 交通"
                 />
-                <input
-  value={newExpense.category}
-  onChange={(event) => setNewExpense({ ...newExpense, category: event.target.value })}
-  placeholder="餐飲"
-/>
 <div className="split-box">
   <button
     type="button"
