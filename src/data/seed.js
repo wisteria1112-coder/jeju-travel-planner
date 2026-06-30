@@ -377,6 +377,7 @@ seopjikoji: {
       name: "牛島快艇",
       area: "牛島 / 城山",
       naverQuery: "우도 제트보트",
+      image: "/udoJetboat.png",
       tags: ["快艇", "水上活動"],
       intro: "路上隨便一家買票就可以，不用預約，可能要排隊。"
     },
