@@ -453,6 +453,7 @@ hallasan: {
   naverQuery: "한라산국립공원",
   lat: 33.3617,
   lng: 126.5292,
+  image: "/hallasan.png",
   tags: ["自然", "登山", "國立公園"],
   intro: "濟州代表性的山林景點。實際停留時間要看選擇的路線，如果只是輕鬆走走，可以安排半日。"
 },
@@ -463,6 +464,7 @@ cheonjeyeon: {
   naverQuery: "천지연폭포",
   lat: 33.2469,
   lng: 126.5544,
+  image: "/cheonjeyeon.png",
   tags: ["瀑布", "散步", "西歸浦"],
   intro: "西歸浦市區附近的瀑布景點，步道相對好走，適合下午安排。"
 },
@@ -471,6 +473,9 @@ orangeLoft: {
   name: "橘花閣樓",
   area: "濟州",
   naverQuery: "귤꽃다락 제주",
+  lat: 33.2449,
+  lng: 126.5306,
+  image: "/orangeLoft.png",
   tags: ["咖啡", "橘子", "拍照"],
   intro: "行程後半段的咖啡／休息點，適合在瀑布或山林行程後慢慢收尾。"
 },
@@ -481,6 +486,7 @@ seongsanPort: {
   naverQuery: "성산항",
   lat: 33.4745,
   lng: 126.9337,
+  image: "/seongsanPort.png",
   tags: ["港口", "牛島", "交通"],
   intro: "前往牛島的主要搭船地點，建議提早抵達，預留買票與排隊時間。"
 },
@@ -491,6 +497,7 @@ aquarium: {
   naverQuery: "아쿠아플라넷 제주",
   lat: 33.4327,
   lng: 126.9278,
+  image: "/aquarium.png",
   tags: ["水族館", "室內", "雨天備案"],
   intro: "濟州東部大型水族館，適合排在城山、涉地可支附近，也可以作為雨天備案。"
 },
