@@ -147,6 +147,8 @@ export default function App() {
   category: "餐飲",
   splitWith: []
 });
+
+const [showSplitOptions, setShowSplitOptions] = useState(false);
   const [memberName, setMemberName] = useState("");
 
   const remoteReady = useMemo(() => ({ current: false }), []);
@@ -599,39 +601,69 @@ function goNextDay() {
   onChange={(event) => setNewExpense({ ...newExpense, category: event.target.value })}
   placeholder="餐飲"
 />
-
 <div className="split-box">
-  <p>這筆跟誰分？</p>
-  <div className="split-options">
-    {(data.participants || []).map((person) => (
-      <label key={person.id || person.name} className="split-option">
-        <input
-          type="checkbox"
-          checked={(newExpense.splitWith || []).includes(person.name)}
-          onChange={(event) => {
-            const checked = event.target.checked;
+  <button
+    type="button"
+    className="split-toggle"
+    onClick={() => setShowSplitOptions((current) => !current)}
+  >
+    <span>
+      這筆跟誰分？
+      <strong>
+        {(newExpense.splitWith || []).length === 0
+          ? "全部人均分"
+          : `${newExpense.splitWith.length} 人分攤`}
+      </strong>
+    </span>
+    <span className={`split-arrow ${showSplitOptions ? "open" : ""}`}>⌄</span>
+  </button>
 
-            setNewExpense((current) => {
-              const currentList = current.splitWith || [];
+  {showSplitOptions && (
+    <div className="split-options">
+      {(data.participants || []).map((person) => (
+        <label key={person.id || person.name} className="split-option">
+          <input
+            type="checkbox"
+            checked={
+              (newExpense.splitWith || []).length === 0 ||
+              (newExpense.splitWith || []).includes(person.name)
+            }
+            onChange={(event) => {
+              const checked = event.target.checked;
 
-              return {
-                ...current,
-                splitWith: checked
-                  ? [...currentList, person.name]
-                  : currentList.filter((name) => name !== person.name)
-              };
-            });
-          }}
-        />
-        <span>{person.name}</span>
-      </label>
-    ))}
-  </div>
+              setNewExpense((current) => {
+                const allNames = (data.participants || []).map((p) => p.name);
+                const currentList =
+                  current.splitWith?.length > 0 ? current.splitWith : allNames;
+
+                return {
+                  ...current,
+                  splitWith: checked
+                    ? [...new Set([...currentList, person.name])]
+                    : currentList.filter((name) => name !== person.name)
+                };
+              });
+            }}
+          />
+          <span>{person.name}</span>
+        </label>
+      ))}
+
+      <button
+        type="button"
+        className="split-all-btn"
+        onClick={() =>
+          setNewExpense((current) => ({
+            ...current,
+            splitWith: []
+          }))
+        }
+      >
+        設為全部人均分
+      </button>
+    </div>
+  )}
 </div>
-
-<button type="submit">
-  <Plus size={18} />新增
-</button>
                 <button type="submit"><Plus size={18} />新增</button>
               </form>
 
