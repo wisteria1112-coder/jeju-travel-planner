@@ -241,6 +241,9 @@ export const seedData = {
       name: "濟州國際機場",
       area: "濟州市",
       naverQuery: "제주국제공항",
+      lat: 33.5113,
+      lng: 126.4929,
+      image: "/jejuairport.png",
       tags: ["機場", "行李", "回程"],
       intro: "第一天先處理行李與交通，最後一天因為早班機，住宿靠市區會最安心。"
     },
@@ -252,7 +255,7 @@ export const seedData = {
   lng: 126.3678,
   image: "/hotel-cony.png",
   tags: ["住宿", "海景", "休息"],
-  intro: "位於涯月的海景第一排\n抵達機場後叫車回飯店 check-in、整理行李與休息。\n地址：제주 제주시 애월읍 가문동길 79"\n自助報到密碼:3256
+  intro: "位於涯月的海景第一排\n抵達機場後叫車回飯店 check-in、整理行李與休息。\n地址：제주 제주시 애월읍 가문동길 79\n自助報到密碼:3256"
 },
 bagel: {
   name: "London Bagel Museum Jeju",
