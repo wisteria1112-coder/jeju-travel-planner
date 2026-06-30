@@ -138,7 +138,7 @@ export const seedData = {
         time: "07:30",
         title: "出發前往城山港",
         type: "transport",
-        spotId: "seongsan Port"
+        spotId: "seongsanPort"
       },
       {
         time: "09:00",
@@ -201,7 +201,7 @@ export const seedData = {
         time: "15:30",
         title: "水族館",
         type: "sight",
-        spotId: "aqurameseum"
+        spotId: "aquarium"
        }
     ]
   },
@@ -508,6 +508,13 @@ checkoutTaxi: {
   naverQuery: "Cony Ocean Suite Hotel 제주",
   tags: ["退房", "叫車", "交通"],
   intro: "退房後叫車前往下一個地點或機場，建議前一天先確認行李與叫車時間。"
+},
+    lunchTBD: {
+  name: "午餐待確定",
+  area: "待確認",
+  naverQuery: "서귀포 점심",
+  tags: ["午餐", "待確認"],
+  intro: "午餐尚未決定，之後可以依照當天路線、實際體力與附近餐廳再安排。"
 },
 
 flightDeparture: {
