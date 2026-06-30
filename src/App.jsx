@@ -290,7 +290,7 @@ function goNextDay() {
     goToDayByIndex(activeDayIndex + 1);
   }
 }
-  const { balances, transfers } = useMemo(() => {
+const { balances, settlements: transfers } = useMemo(() => {  
   return calculateSettlements(data.expenses || [], data.participants || []);
 }, [data.expenses, data.participants]);
 
