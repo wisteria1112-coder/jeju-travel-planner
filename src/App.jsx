@@ -141,11 +141,12 @@ export default function App() {
   const [activeSpotId, setActiveSpotId] = useState(data.days[0]?.items?.[0]?.spotId || "airport");
   const [syncState, setSyncState] = useState(hasFirebaseConfig ? "connecting" : "local");
   const [newExpense, setNewExpense] = useState({
-    title: "",
-    amount: "",
-    paidBy: data.participants[0]?.id || "a",
-    category: "餐飲"
-  });
+  title: "",
+  amount: "",
+  payer: "Iris",
+  category: "餐飲",
+  splitWith: []
+});
   const [memberName, setMemberName] = useState("");
 
   const remoteReady = useMemo(() => ({ current: false }), []);
@@ -314,18 +315,27 @@ function goNextDay() {
   ...current,
   expenses: [
     ...(current.expenses || []),
-    {
-          id: createId("expense"),
-          title: newExpense.title.trim(),
-          amount: Number(newExpense.amount),
-          paidBy: newExpense.paidBy,
-          splitWith: current.participants.map((p) => p.id),
-          category: newExpense.category || "其他"
-        }
+   {
+  id: createId("expense"),
+  title: newExpense.title.trim(),
+  amount: Number(newExpense.amount),
+  payer: newExpense.payer,
+  category: newExpense.category || "其他",
+  splitWith:
+    newExpense.splitWith?.length > 0
+      ? newExpense.splitWith
+      : (data.participants || []).map((person) => person.name),
+  createdAt: Date.now()
+}
       ]
     }));
 
-    setNewExpense((current) => ({ ...current, title: "", amount: "" }));
+    setNewExpense((current) => ({
+  ...current,
+  title: "",
+  amount: "",
+  splitWith: []
+}));
   }
 
   function deleteExpense(id) {
@@ -584,6 +594,44 @@ function goNextDay() {
                   onChange={(event) => setNewExpense({ ...newExpense, category: event.target.value })}
                   placeholder="分類，例如 餐飲 / 交通"
                 />
+                <input
+  value={newExpense.category}
+  onChange={(event) => setNewExpense({ ...newExpense, category: event.target.value })}
+  placeholder="餐飲"
+/>
+
+<div className="split-box">
+  <p>這筆跟誰分？</p>
+  <div className="split-options">
+    {(data.participants || []).map((person) => (
+      <label key={person.id || person.name} className="split-option">
+        <input
+          type="checkbox"
+          checked={(newExpense.splitWith || []).includes(person.name)}
+          onChange={(event) => {
+            const checked = event.target.checked;
+
+            setNewExpense((current) => {
+              const currentList = current.splitWith || [];
+
+              return {
+                ...current,
+                splitWith: checked
+                  ? [...currentList, person.name]
+                  : currentList.filter((name) => name !== person.name)
+              };
+            });
+          }}
+        />
+        <span>{person.name}</span>
+      </label>
+    ))}
+  </div>
+</div>
+
+<button type="submit">
+  <Plus size={18} />新增
+</button>
                 <button type="submit"><Plus size={18} />新增</button>
               </form>
 
