@@ -1206,3 +1206,25 @@ main {
   cursor: pointer;
   box-shadow: none !important;
 }
+.luggage-groups {
+  display: grid;
+  gap: 22px;
+}
+
+.luggage-group {
+  background: #fffafc;
+  border: 2px solid #ffc8dc;
+  border-radius: 26px;
+  padding: 18px;
+}
+
+.luggage-group h3 {
+  margin: 0 0 14px;
+  color: #24435a;
+  font-size: 22px;
+}
+
+.luggage-group .luggage-list {
+  display: grid;
+  gap: 10px;
+}
