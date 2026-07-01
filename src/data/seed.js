@@ -40,9 +40,7 @@ export const seedData = {
       title: "橘子的深度探索",
       mood: "來都來了要了解一下🍊",
       items: [
-  { time: "08:30", title: "早餐待確定", spotId: "breakfastTBD", type: "food" },
   { time: "10:00", title: "漢拏山國立公園", spotId: "hallasan", type: "sight" },
-  { time: "12:30", title: "午餐待確定", spotId: "lunchTBD", type: "food" },
   { time: "14:00", title: "正房瀑布", spotId: "jeongbang", type: "sight" },
   { time: "15:30", title: "天地淵瀑布", spotId: "cheonjeyeon", type: "sight" },
   { time: "17:00", title: "橘花閣樓", spotId: "orangeLoft", type: "cafe" },
