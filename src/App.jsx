@@ -485,21 +485,21 @@ function toggleLuggageItem(item) {
               <p>朋友使用同一個 Firebase 設定與 Trip ID，就會看到同一份雲端資料。</p>
             </section>
 
-            <section className="card menu-card">
-              <p className="section-kicker">Timeline</p>
-              <h2>選擇日期</h2>
-              <div className="day-menu">
-                {days.map((day) => (
-                  <button key={day.id} onClick={() => openDay(day.id)}>
-                    <span>{day.label}</span>
-                    <b>{day.date}</b>
-                    <small>{day.title}</small>
-                  </button>
-                ))}
-              </div>
-            </section>
+           <section className="card menu-card">
+  <p className="section-kicker">Timeline</p>
+  <h2>選擇日期</h2>
+  <div className="day-menu">
+    {days.map((day) => (
+      <button key={day.id} onClick={() => openDay(day.id)}>
+        <span>{day.label}</span>
+        <b>{day.date}</b>
+        <small>{day.title}</small>
+      </button>
+    ))}
+  </div>
+</section>
 
-            <section className="card menu-card">
+<section className="card menu-card">
   <p className="section-kicker">Money</p>
   <h2>旅行記帳</h2>
 
@@ -507,7 +507,18 @@ function toggleLuggageItem(item) {
     <CreditCard size={22} />
     打開記帳本
   </button>
+</section>
 
+<section className="card menu-card">
+  <p className="section-kicker">Packing</p>
+  <h2>行李清單</h2>
+
+  <button className="big-action" onClick={openLuggage}>
+    🧳
+    打開行李清單
+  </button>
+</section>
+)}
   <p className="section-kicker">Packing</p>
   <h2>行李清單</h2>
 
