@@ -352,6 +352,20 @@ function openLuggage() {
   setView("luggage");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+function toggleLuggageItem(item) {
+  if (!selectedPersonName) return;
+
+  setData((current) => ({
+    ...current,
+    luggage: {
+      ...(current.luggage || {}),
+      [selectedPersonName]: {
+        ...(current.luggage?.[selectedPersonName] || {}),
+        [item]: !current.luggage?.[selectedPersonName]?.[item]
+      }
+    }
+  }));
+}
   function openHome() {
     setView("home");
     window.scrollTo({ top: 0, behavior: "smooth" });
