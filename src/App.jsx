@@ -280,6 +280,14 @@ const spots = data.spots || {};
 
 const activeDay = days.find((day) => day.id === activeDayId) || days[0] || {};
 const activeSpot = spots[activeSpotId] || {};
+const selectedPersonName =
+  selectedLuggageName || data.participants?.[0]?.name || "";
+
+const selectedLuggage = data.luggage?.[selectedPersonName] || {};
+
+const packedCount = DEFAULT_LUGGAGE_ITEMS.filter(
+  (item) => selectedLuggage[item]
+).length;
 const activeDayIndex = days.findIndex((day) => day.id === activeDayId);
 
 const dayItems = Array.isArray(activeDay?.items)
