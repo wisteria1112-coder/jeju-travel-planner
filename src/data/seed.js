@@ -23,6 +23,7 @@ export const seedData = {
   { time: "23:50", title: "桃園機場集合", spotId: "taoyuanAirport", type: "transport" },
   { time: "02:50", title: "台灣起飛", spotId: "taoyuanAirport", type: "flight" },
   { time: "06:05", title: "抵達濟州機場", spotId: "airport", type: "flight" },
+  { time: "07:00", title: "Egg Drop 早餐", spotId: "eggDrop", type: "food" },
   { time: "08:00", title: "Cony Ocean Suite Hotel 寄放行李", spotId: "hotel", type: "hotel" },
   { time: "09:00", title: "Haejigae Cafe", spotId: "haejigaeCafe", type: "food" },
   { time: "11:00", title: "9.81 Park 賽車", spotId: "park981", type: "activity" },
@@ -455,6 +456,13 @@ oliveYoung: {
   naverQuery: "올리브영 제주",
   tags: ["藥妝", "購物", "伴手禮"],
   intro: "韓國常見藥妝店，適合在 Day 4 水族館行程後採買保養品、零食與伴手禮。"
+},
+eggDrop: {
+  name: "Egg Drop",
+  area: "濟州市",
+  naverQuery: "에그드랍 제주",
+  tags: ["早餐", "三明治", "抵達後補充體力"],
+  intro: "抵達濟州後先吃早餐，適合作為機場到飯店寄放行李前的第一站。"
 },
   udoReturnPort: {
   name: "下牛木洞港",
