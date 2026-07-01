@@ -518,15 +518,6 @@ function toggleLuggageItem(item) {
     打開行李清單
   </button>
 </section>
-)}
-  <p className="section-kicker">Packing</p>
-  <h2>行李清單</h2>
-
-  <button className="big-action" onClick={openLuggage}>
-    🧳
-    打開行李清單
-  </button>
-</section>
 </section>
 )}
         {view === "day" && (
