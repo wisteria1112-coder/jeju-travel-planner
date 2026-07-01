@@ -262,7 +262,7 @@ export const seedData = {
       items: [
         { time: "07:40", title: "退房叫車", spotId: "terrace", type: "hotel" },
         { time: "08:20", title: "抵達濟州機場", spotId: "airport", type: "flight" },
-        { time: "10:30", title: "飛機起飛", spotId: "airport", type: "flight" }},
+        { time: "10:30", title: "飛機起飛", spotId: "airport", type: "flight" },
         { time: "11:35", title: "抵達桃園機場", spotId: "taoyuanAirport", type: "flight" }
       ]
     }
