@@ -471,16 +471,23 @@ const { balances, settlements: transfers } = useMemo(() => {
             </section>
 
             <section className="card menu-card">
-              <p className="section-kicker">Money</p>
-              <h2>旅行記帳</h2>
-              <button className="big-action" onClick={openBudget}>
-                <CreditCard size={22} />
-                打開記帳本
-              </button>
-            </section>
-          </section>
-        )}
+  <p className="section-kicker">Money</p>
+  <h2>旅行記帳</h2>
 
+  <button className="big-action" onClick={openBudget}>
+    <CreditCard size={22} />
+    打開記帳本
+  </button>
+
+  <p className="section-kicker">Packing</p>
+  <h2>行李清單</h2>
+
+  <button className="big-action" onClick={openLuggage}>
+    🧳
+    打開行李清單
+  </button>
+</section>
+            )}
         {view === "day" && (
           <section className="screen">
             <div className="screen-top">
