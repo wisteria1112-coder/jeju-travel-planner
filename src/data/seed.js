@@ -202,55 +202,16 @@ export const seedData = {
       date: "9/4",
       title: "水..咕嚕咕嚕..族..咕嚕..館",
       mood: "聽說有動物表演",
-      items: [
-      {
-        time: "08:30",
-        title: "早餐｜London Bagel Museum Jeju",
-        type: "food",
-        spotId: "bagel"
-      },
-      {
-        time: "10:30",
-        title: "萬丈窟",
-        type: "sight",
-        spotId: "manjanggul"
-      },
-      {
-        time: "12:30",
-        title: "城山日出峰",
-        type: "sight",
-        spotId: "seongsan"
-      },
-      {
-        time: "14:00",
-        title: "午餐｜어우름제주고기국수 성산본점",
-        type: "food",
-        spotId: "eoureumNoodles"
-      },
-      {
-        time: "15:30",
-        title: "水族館",
-        type: "sight",
-        spotId: "aquarium"
-        },
-        {
-  time: "17:30",
-  title: "Olive Young",
-  type: "shopping",
-  spotId: "oliveYoung"
-},
-{
-  time: "18:30",
-  title: "大創",
-  type: "shopping",
-  spotId: "daiso"
-},
-{
-  time: "20:00",
-  title: "回飯店休息",
-  type: "hotel",
-  spotId: "hotel"
-}
+   items: [
+  { time: "08:30", title: "London Bagel Museum Jeju", spotId: "bagel", type: "food" },
+  { time: "10:30", title: "萬丈窟", spotId: "manjanggul", type: "sight" },
+  { time: "12:30", title: "城山日出峰", spotId: "seongsan", type: "sight" },
+  { time: "14:00", title: "午餐｜어우름제주고기국수 성산본점", spotId: "eoureumNoodles", type: "food" },
+  { time: "15:30", title: "涉地可支", spotId: "seopjikoji", type: "sight" },
+  { time: "17:00", title: "水族館", spotId: "aquarium", type: "sight" },
+  { time: "18:00", title: "Olive Young", spotId: "oliveYoung", type: "shopping" },
+  { time: "18:30", title: "大創", spotId: "daiso", type: "shopping" },
+  { time: "20:00", title: "回飯店休息", spotId: "hotel", type: "hotel" } 
     ]
   },
   {
