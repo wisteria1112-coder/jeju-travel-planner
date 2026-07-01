@@ -53,7 +53,7 @@ export const seedData = {
   date: "9/3",
   title: "牛島一整天",
   mood: "花生冰淇淋、白沙灘、黑沙灘，最後用快艇收尾！",
- items: [
+items: [
   { time: "07:30", title: "出發前往城山港", spotId: "seongsanPort", type: "transport" },
   { time: "09:00", title: "搭船前往牛島", spotId: "udo", type: "transport" },
   { time: "09:45", title: "hahahehe 漢堡早餐", spotId: "hahahehe", type: "food" },
@@ -61,7 +61,8 @@ export const seedData = {
   { time: "12:00", title: "牛頭峰", spotId: "udobong", type: "sight" },
   { time: "13:00", title: "牛島黑沙灘", spotId: "udoBlackBeach", type: "sight" },
   { time: "14:00", title: "牛島快艇", spotId: "udoJetboat", type: "activity" },
-  { time: "15:30", title: "UDOI／UDO SAND 花生冰淇淋・伴手禮", spotId: "udoSand", type: "food" },
+  { time: "15:30", title: "UDO SAND 花生冰淇淋", spotId: "udoSand", type: "food" },
+  { time: "16:00", title: "UDOI 伴手禮", spotId: "udoi", type: "shopping" },
   { time: "17:00", title: "下牛木洞港搭船回濟州", spotId: "udoReturnPort", type: "transport" },
   { time: "18:30", title: "東門市場", spotId: "dongmun", type: "food" },
   { time: "20:30", title: "回飯店休息", spotId: "hotel", type: "hotel" }
@@ -463,6 +464,20 @@ eggDrop: {
   naverQuery: "에그드랍 제주",
   tags: ["早餐", "三明治", "抵達後補充體力"],
   intro: "抵達濟州後先吃早餐，適合作為機場到飯店寄放行李前的第一站。"
+},
+hahahehe: {
+  name: "hahahehe 漢堡",
+  area: "牛島",
+  naverQuery: "하하호호 우도",
+  tags: ["早餐", "漢堡", "牛島"],
+  intro: "牛島人氣漢堡店，抵達牛島後先吃早餐、補充體力。"
+},
+  udoi: {
+  name: "UDOI",
+  area: "牛島",
+  naverQuery: "UDOI 우도",
+  tags: ["伴手禮", "甜點", "牛島"],
+  intro: "牛島上的人氣伴手禮／甜點店，適合安排在快艇後作為收尾，買東西、休息一下，再準備搭船回濟州。"
 },
   udoReturnPort: {
   name: "下牛木洞港",
