@@ -40,72 +40,23 @@ function money(value) {
 const DEFAULT_LUGGAGE_GROUPS = [
   {
     category: "換洗衣物",
-    items: [
-      "衣服幾套",
-      "內褲",
-      "襪子",
-      "睡衣",
-      "外套",
-      "帽子",
-      "鞋子"
-    ]
+    items: ["衣服4套", "內褲", "襪子", "睡衣", "外套", "帽子", "鞋子"]
   },
   {
     category: "盥洗用品",
-    items: [
-      "洗面乳",
-      "洗髮乳",
-      "潤髮乳",
-      "牙刷牙膏",
-      "牙套牙線",
-      "乳液",
-      "刮鬍刀"
-    ]
+    items: ["洗面乳", "洗髮乳", "潤髮乳", "牙刷牙膏", "牙套牙線", "乳液", "刮鬍刀"]
   },
   {
     category: "化妝用品",
-    items: [
-      "粉底",
-      "粉撲",
-      "防曬",
-      "遮瑕",
-      "眼影",
-      "唇膏",
-      "睫毛膏",
-      "腮紅",
-      "打亮修容",
-      "洗臉巾",
-      "護髮／髮油",
-      "化妝棉",
-      "眼鏡盒",
-      "隱形眼鏡",
-      "棉花棒"
-    ]
+    items: ["粉底", "粉撲", "防曬", "遮瑕", "眼影", "唇膏", "睫毛膏", "腮紅", "打亮修容", "洗臉巾", "護髮／髮油", "化妝棉", "眼鏡盒", "隱形眼鏡", "棉花棒"]
   },
   {
     category: "隨身用品",
-    items: [
-      "小衛生紙",
-      "信用卡",
-      "錢包",
-      "護照",
-      "可愛小書",
-      "雨傘",
-      "常備藥",
-      "暈船藥"
-    ]
+    items: ["小衛生紙", "信用卡", "錢包", "護照", "雨傘", "常備藥", "暈船藥"]
   },
   {
     category: "3C 設備",
-    items: [
-      "手機",
-      "耳機",
-      "充電器",
-      "相機",
-      "萬用插頭",
-      "行動電源",
-      "eSIM / 網路設定"
-    ]
+    items: ["手機", "耳機", "充電器", "相機", "萬用插頭", "行動電源", "eSIM / 網路設定"]
   }
 ];
 
@@ -639,29 +590,66 @@ const { balances, settlements: transfers } = useMemo(() => {
             </aside>
           </section>
         )}
-<div className="luggage-groups">
-  {DEFAULT_LUGGAGE_GROUPS.map((group) => (
-    <div className="luggage-group" key={group.category}>
-      <h3>{group.category}</h3>
+{view === "luggage" && (
+  <section className="screen">
+    <div className="screen-top">
+      <button className="back-btn" onClick={openHome}>
+        <Home size={18} />首頁
+      </button>
+      <button className="soft-btn" onClick={openBudget}>
+        <ReceiptText size={18} />記帳
+      </button>
+    </div>
 
-      <div className="luggage-list">
-        {group.items.map((item) => (
-          <label
-            key={item}
-            className={`luggage-item ${selectedLuggage[item] ? "done" : ""}`}
-          >
-            <input
-              type="checkbox"
-              checked={!!selectedLuggage[item]}
-              onChange={() => toggleLuggageItem(item)}
-            />
-            <span>{item}</span>
-          </label>
-        ))}
+    <div className="luggage-shell">
+      <div className="luggage-card">
+        <p className="section-kicker">PACKING LIST</p>
+        <h2>行李清單</h2>
+        <p className="muted">選自己的名字，勾選自己的行李。</p>
+
+        <select
+          className="luggage-select"
+          value={selectedPersonName}
+          onChange={(event) => setSelectedLuggageName(event.target.value)}
+        >
+          {(data.participants || []).map((person) => (
+            <option key={person.id || person.name} value={person.name}>
+              {person.name}
+            </option>
+          ))}
+        </select>
+
+        <p className="luggage-progress">
+          已完成 {packedCount} / {DEFAULT_LUGGAGE_ITEMS.length}
+        </p>
+
+        <div className="luggage-groups">
+          {DEFAULT_LUGGAGE_GROUPS.map((group) => (
+            <div className="luggage-group" key={group.category}>
+              <h3>{group.category}</h3>
+
+              <div className="luggage-list">
+                {group.items.map((item) => (
+                  <label
+                    key={item}
+                    className={`luggage-item ${selectedLuggage[item] ? "done" : ""}`}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={!!selectedLuggage[item]}
+                      onChange={() => toggleLuggageItem(item)}
+                    />
+                    <span>{item}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
-  ))}
-</div>
+  </section>
+)}
         {view === "budget" && (
           <section className="screen">
             <div className="screen-top">
