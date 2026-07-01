@@ -19,68 +19,18 @@ export const seedData = {
       date: "9/1",
       title: "橘子～大海～我們來了～",
       mood: "特種部隊出動！",
-      items: [
-  {
-    time: "23:50",
-    title: "桃園機場集合",
-    type: "transport",
-    spotId: "taoyuanAirport"
-  },
-  {
-    time: "02:50",
-    title: "台灣起飛",
-    type: "transport",
-    spotId: "taoyuanAirport"
-  },
-  {
-    time: "06:05",
-    title: "抵達濟州機場",
-    type: "transport",
-    spotId: "airport"
-  },
-  {
-    time: "08:00",
-    title: "Cony Ocean Suite Hotel 寄放行李",
-    type: "hotel",
-    spotId: "hotel"
-  },
-  {
-  time: "09:00",
-        title: "Haejigae Cafe",
-        type: "food",
-        spotId: "haejigaeCafe"
-      },
-      {
-        time: "11:00",
-        title: "9.81 Park 賽車",
-        type: "activity",
-        spotId: "park981"
-      },
-      {
-        time: "12:30",
-        title: "Osulloc 茶博物館",
-        type: "sight",
-        spotId: "osulloc"
-      },
-      {
-        time: "15:00",
-        title: "如美地植物園",
-        type: "sight",
-        spotId: "yeomiji"
-      },
-      {
-        time: "18:00",
-        title: "晚餐｜薰陶 濟州黑豬肉專門店",
-        type: "food",
-        spotId: "hundo"
-      },
-           {
-        time: "20:00",
-        title: "回飯店休息",
-        type: "hotel",
-        spotId: "hotel"
-      }
-    ]
+     items: [
+  { time: "23:50", title: "桃園機場集合", spotId: "taoyuanAirport", type: "transport" },
+  { time: "02:50", title: "台灣起飛", spotId: "taoyuanAirport", type: "flight" },
+  { time: "06:05", title: "抵達濟州機場", spotId: "airport", type: "flight" },
+  { time: "08:00", title: "Cony Ocean Suite Hotel 寄放行李", spotId: "hotel", type: "hotel" },
+  { time: "09:00", title: "Haejigae Cafe", spotId: "haejigaeCafe", type: "food" },
+  { time: "11:00", title: "9.81 Park 賽車", spotId: "park981", type: "activity" },
+  { time: "12:30", title: "Osulloc 茶博物館", spotId: "osulloc", type: "sight" },
+  { time: "15:00", title: "如美地植物園", spotId: "yeomiji", type: "sight" },
+  { time: "18:00", title: "晚餐｜薰陶 濟州黑豬肉專門店", spotId: "hundo", type: "food" },
+  { time: "20:00", title: "回飯店休息", spotId: "hotel", type: "hotel" }
+]
   },
   {
     id: "day2",
@@ -89,49 +39,14 @@ export const seedData = {
       title: "橘子的深度探索",
       mood: "來都來了要了解一下🍊",
       items: [
-      {
-        time: "08:00",
-        title: "早餐待確定",
-        type: "food",
-        spotId: "breakfastTBD"
-      },
-      {
-        time: "09:30",
-        title: "漢拏山國立公園",
-        type: "nature",
-        spotId: "hallasan"
-      },
-      {
-        time: "12:30",
-        title: "午餐待確定",
-        type: "food",
-        spotId: "lunchTBD"
-      },
-      {
-        time: "14:00",
-        title: "正房瀑布",
-        type: "sight",
-        spotId: "jeongbang"
-      },
-      {
-        time: "15:30",
-        title: "天地淵瀑布",
-        type: "sight",
-        spotId: "cheonjeyeon"
-      },
-            {
-        time: "17:30",
-        title: "橘花閣樓",
-        type: "cafe",
-        spotId: "orangeLoft"
-      },
-        {
-        time: "19:00",
-        title: "回飯店休息",
-        type: "hotel",
-        spotId: "hotel"
-  }
-  ]
+  { time: "08:30", title: "早餐待確定", spotId: "breakfastTBD", type: "food" },
+  { time: "10:00", title: "漢拏山國立公園", spotId: "hallasan", type: "sight" },
+  { time: "12:30", title: "午餐待確定", spotId: "lunchTBD", type: "food" },
+  { time: "14:00", title: "正房瀑布", spotId: "jeongbang", type: "sight" },
+  { time: "15:30", title: "天地淵瀑布", spotId: "cheonjeyeon", type: "sight" },
+  { time: "17:00", title: "橘花閣樓", spotId: "orangeLoft", type: "cafe" },
+  { time: "20:00", title: "回飯店休息", spotId: "hotel", type: "hotel" }
+]
         },
   {
   id: "day3",
@@ -140,61 +55,16 @@ export const seedData = {
   title: "牛島一整天",
   mood: "花生冰淇淋、白沙灘、黑沙灘，最後用快艇收尾！",
   items: [
-    {
-      time: "07:30",
-      title: "出發前往城山港",
-      type: "transport",
-      spotId: "seongsanPort"
-    },
-    {
-      time: "09:00",
-      title: "搭船前往牛島",
-      type: "transport",
-      spotId: "udo"
-    },
-    {
-      time: "10:00",
-      title: "UDO SAND 花生冰淇淋",
-      type: "food",
-      spotId: "udoSand"
-    },
-    {
-      time: "11:00",
-      title: "牛島白沙灘",
-      type: "sight",
-      spotId: "udoWhiteBeach"
-    },
-    {
-      time: "12:30",
-      title: "牛島黑沙灘",
-      type: "sight",
-      spotId: "udoBlackBeach"
-    },
-    {
-      time: "14:30",
-      title: "牛島快艇",
-      type: "activity",
-      spotId: "udoJetboat"
-    },
-    {
-      time: "17:00",
-      title: "下牛木洞港搭船回濟州",
-      type: "transport",
-      spotId: "udoReturnPort"
-    },
-    {
-  time: "18:30",
-  title: "東門市場",
-  type: "food",
-  spotId: "dongmun"
-},
-    {
-      time: "20:00",
-      title: "回飯店休息",
-      type: "hotel",
-      spotId: "hotel"
-  }
-  ]
+  { time: "07:30", title: "出發前往城山港", spotId: "seongsanPort", type: "transport" },
+  { time: "09:00", title: "搭船前往牛島", spotId: "udo", type: "transport" },
+  { time: "10:00", title: "UDO SAND 花生冰淇淋", spotId: "udoSand", type: "food" },
+  { time: "11:00", title: "牛島白沙灘", spotId: "udoWhiteBeach", type: "sight" },
+  { time: "12:30", title: "牛島黑沙灘", spotId: "udoBlackBeach", type: "sight" },
+  { time: "14:30", title: "牛島快艇", spotId: "udoJetboat", type: "activity" },
+  { time: "17:00", title: "下牛木洞港搭船回濟州", spotId: "udoReturnPort", type: "transport" },
+  { time: "18:30", title: "東門市場", spotId: "dongmun", type: "food" },
+  { time: "20:30", title: "回飯店休息", spotId: "hotel", type: "hotel" }
+]
 },
 {
       id: "day4",
