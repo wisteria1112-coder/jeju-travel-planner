@@ -176,6 +176,7 @@ export default function App() {
   const [tripId, setTripId] = useState(() => localStorage.getItem("jeju-trip-id") || "jeju-2026");
   const [data, setData] = useState(getInitialData);
   const [view, setView] = useState("home");
+  const [selectedLuggageName, setSelectedLuggageName] = useState("");
   const [activeDayId, setActiveDayId] = useState(data.days[0]?.id || "day1");
   const [activeSpotId, setActiveSpotId] = useState(data.days[0]?.items?.[0]?.spotId || "airport");
   const [syncState, setSyncState] = useState(hasFirebaseConfig ? "connecting" : "local");
