@@ -611,7 +611,7 @@ function openLuggage() {
         <Home size={18} />首頁
       </button>
       <button className="soft-btn" onClick={openBudget}>
-        <ReceiptText size={18} />記帳
+<CreditCard size={18} />記帳      
       </button>
     </div>
 
