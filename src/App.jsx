@@ -336,7 +336,13 @@ const { balances, settlements: transfers } = useMemo(() => {
     setView("budget");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
-
+function openLuggage() {
+  setSelectedLuggageName(
+    (current) => current || data.participants?.[0]?.name || ""
+  );
+  setView("luggage");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
   function openHome() {
     setView("home");
     window.scrollTo({ top: 0, behavior: "smooth" });
