@@ -487,7 +487,8 @@ const { balances, settlements: transfers } = useMemo(() => {
     打開行李清單
   </button>
 </section>
-            )}
+</section>
+)}
         {view === "day" && (
           <section className="screen">
             <div className="screen-top">
