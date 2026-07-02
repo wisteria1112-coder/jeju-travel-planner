@@ -457,7 +457,7 @@ oliveYoung: {
   naverQuery: "올리브영 제주",
   tags: ["藥妝", "購物", "伴手禮"],
   intro: "買伴手禮的時間到了。",
-   shoppingList: [
+  shoppingList: [
     {
       category: "保養品",
       groups: [
@@ -493,14 +493,16 @@ oliveYoung: {
             { name: "A'ddict Peel the Bergamot（柚子）", note: "使用前須搖勻" },
             { name: "A'ddict Warm Afternoon" }
           ]
-        },
-        {
-           category: "衣物",
+        }
+      ]
+    },
+    {
+      category: "衣物",
       groups: [
         {
           title: "內褲",
           items: [
-            { name: "寬鬆四角內褲" } 
+            { name: "寬鬆四角內褲" }
           ]
         }
       ]
@@ -551,7 +553,7 @@ oliveYoung: {
         }
       ]
     },
-       {
+    {
       category: "避雷",
       groups: [
         {
@@ -565,8 +567,7 @@ oliveYoung: {
     }
   ]
 },
-
-eggDrop: {
+  eggDrop: {
   name: "Egg Drop",
   area: "濟州市",
   naverQuery: "에그드랍 제주",
