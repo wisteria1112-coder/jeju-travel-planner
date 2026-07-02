@@ -495,17 +495,12 @@ oliveYoung: {
           ]
         },
         {
+           category: "衣物",
+      groups: [
+        {
           title: "內褲",
           items: [
-            { name: "寬鬆四角內褲" }
-          ]
-        },
-        {
-          title: "機能茶包 Better AET",
-          items: [
-            { name: "紫色（薰衣草＋洋甘菊）", note: "睡眠障礙" },
-            { name: "綠色（地瓜＋南瓜＋決明子＋紅豆）", note: "日常消水腫" },
-            { name: "紅色 消水腫加強版" }
+            { name: "寬鬆四角內褲" } 
           ]
         }
       ]
@@ -516,6 +511,9 @@ oliveYoung: {
         {
           title: "機能茶包 Better AET",
           items: [
+            { name: "紫色（薰衣草＋洋甘菊）", note: "睡眠障礙" },
+            { name: "綠色（地瓜＋南瓜＋決明子＋紅豆）", note: "日常消水腫" },
+            { name: "紅色 消水腫加強版" }
             { name: "黃色 主打養胃、護胃" }
           ]
         },
