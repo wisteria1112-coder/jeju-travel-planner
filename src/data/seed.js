@@ -449,14 +449,82 @@ daiso: {
   area: "濟州",
   naverQuery: "다이소 제주",
   tags: ["購物", "生活用品", "伴手禮"],
-  intro: "韓國大創適合採買生活小物、旅行用品、零食與可愛雜貨。安排在 Olive Young 後面一起採買很順。"
+  intro: "上次沒去這次補上。"
 },
 oliveYoung: {
   name: "Olive Young",
   area: "濟州",
   naverQuery: "올리브영 제주",
   tags: ["藥妝", "購物", "伴手禮"],
-  intro: "韓國常見藥妝店，適合在 Day 4 水族館行程後採買保養品、零食與伴手禮。"
+  intro: "買伴手禮的時間到了。"
+  shoppingList: [
+  {
+    category: "保養品",
+    groups: [
+      {
+        title: "抗痘",
+        items: [
+          "Anua 魚腥草77% B3 Zinc 鋅精華",
+          "Bring Green 保濕精華液"
+        ]
+      },
+      {
+        title: "妝前",
+        items: [
+          "Torriden DIVE IN 潛水舒緩霜",
+          "MEDITHERAPY 333精華"
+        ]
+      },
+      {
+        title: "頭皮",
+        items: [
+          "Aromatica 茶樹淨化爽膚液",
+          "Ryo Rootgen Aqua Peel 頭皮水"
+        ]
+      }
+    ]
+  },
+  {
+    category: "香水",
+    groups: [
+      {
+        title: "香水",
+        items: [
+          "A'ddict Peel the Bergamot（柚子）",
+          "A'ddict Warm Afternoon"
+        ]
+      },
+      {
+        title: "內褲",
+        items: [
+          "寬鬆四角內褲"
+        ]
+      }
+    ]
+  },
+  {
+    category: "濟州限定",
+    groups: [
+      {
+        title: "食物",
+        items: [
+          "牛島花生貝果脆片",
+          "橘子貝果脆片",
+          "橘子香氛片"
+        ]
+      },
+      {
+        title: "商品",
+        items: [
+          "護手霜",
+          "柑橘護唇膏",
+          "柑橘造海綿球",
+          "專屬痘痘貼"
+        ]
+      }
+    ]
+  }
+]
 },
 eggDrop: {
   name: "Egg Drop",
