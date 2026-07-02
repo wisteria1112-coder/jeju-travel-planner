@@ -471,13 +471,13 @@ daiso: {
           items: [
             { name: "BODYTAMIN 紫色款精華", note: "腋下美白專攻" },
             { name: "BODYTAMIN 紅色款精華", note: "除脖紋專攻" }
-          ]
+           ]
         }
       ]
     }
   ]
-  ]
 },
+
 oliveYoung: {
   name: "Olive Young",
   area: "濟州",
