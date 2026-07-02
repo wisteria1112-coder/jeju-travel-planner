@@ -593,7 +593,32 @@ function toggleLuggageItem(item) {
               <h2>{activeSpot.name || "濟州機場"}</h2>
             
               <p>{activeSpot.intro || "有時間的話拍個轉場。"}</p>
+{activeSpot.shoppingList && (
+  <div className="shopping-list-card">
+    <h3>🛒 購物清單</h3>
 
+    {activeSpot.shoppingList.map((section) => (
+      <div className="shopping-section" key={section.category}>
+        <h4>{section.category}</h4>
+
+        {section.groups.map((group) => (
+          <div className="shopping-group" key={group.title}>
+            <p>{group.title}</p>
+
+            <ul>
+              {group.items.map((item) => (
+                <li key={item.name}>
+                  <span>{item.name}</span>
+                  {item.note && <small>{item.note}</small>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+)}
               <div className="tag-row">
                 {(activeSpot.tags || []).map((tag) => (
                   <span key={tag}>#{tag}</span>
