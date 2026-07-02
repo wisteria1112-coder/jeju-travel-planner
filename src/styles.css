@@ -1228,3 +1228,66 @@ main {
   display: grid;
   gap: 10px;
 }
+.shopping-list-card {
+  margin-top: 22px;
+  background: #fffafc;
+  border: 2px solid #ffc8dc;
+  border-radius: 28px;
+  padding: 20px;
+  box-shadow: 0 14px 36px rgba(36, 67, 90, 0.1);
+}
+
+.shopping-list-card h3 {
+  margin: 0 0 18px;
+  color: #24435a;
+  font-size: 24px;
+}
+
+.shopping-section {
+  background: white;
+  border-radius: 22px;
+  padding: 16px;
+  margin-top: 14px;
+  border: 1px solid #ffe1eb;
+}
+
+.shopping-section h4 {
+  margin: 0 0 12px;
+  color: #ff6b2c;
+  font-size: 20px;
+}
+
+.shopping-group {
+  margin-top: 14px;
+}
+
+.shopping-group p {
+  margin: 0 0 8px;
+  color: #24435a;
+  font-weight: 900;
+}
+
+.shopping-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.shopping-group li {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: #fff7ec;
+  color: #24435a;
+  font-weight: 700;
+}
+
+.shopping-group li small {
+  color: #7a6a5d;
+  font-weight: 700;
+  font-size: 13px;
+}
