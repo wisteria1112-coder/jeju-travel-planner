@@ -449,7 +449,34 @@ daiso: {
   area: "濟州",
   naverQuery: "다이소 제주",
   tags: ["購物", "生活用品", "伴手禮"],
-  intro: "上次沒去這次補上。"
+  intro: "韓國大創適合採買生活小物、旅行用品、零食與可愛雜貨。安排在 Olive Young 後面一起採買很順。",
+  shoppingList: [
+    {
+      category: "美妝保養",
+      groups: [
+        {
+          title: "身體保養",
+          items: [
+            { name: "Daiso 磨砂膏", note: "🧼 去除老廢角質" }
+          ]
+        },
+        {
+          title: "臉部保養",
+          items: [
+            { name: "VT Reedle Shot 50", note: "🧬 溫和入門微針" }
+          ]
+        },
+        {
+          title: "BODYTAMIN",
+          items: [
+            { name: "BODYTAMIN 紫色款精華", note: "腋下美白專攻" },
+            { name: "BODYTAMIN 紅色款精華", note: "除脖紋專攻" }
+          ]
+        }
+      ]
+    }
+  ]
+  ]
 },
 oliveYoung: {
   name: "Olive Young",
