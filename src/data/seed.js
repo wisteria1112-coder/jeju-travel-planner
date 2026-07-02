@@ -93,7 +93,7 @@ items: [
       title: "回去當牛馬",
       mood: "該面對現實",
       items: [
-        { time: "07:40", title: "退房叫車", spotId: "terrace", type: "hotel" },
+        { time: "07:40", title: "退房叫車", spotId: "checkoutTaxi", type: "hotel" },        
         { time: "08:20", title: "抵達濟州機場", spotId: "airport", type: "flight" },
         { time: "10:30", title: "飛機起飛", spotId: "airport", type: "flight" },
         { time: "11:35", title: "抵達桃園機場", spotId: "taoyuanAirport", type: "flight" }
@@ -256,13 +256,15 @@ seopjikoji: {
       intro: "東部室內景點，下雨備案也很好用。可跟城山日出峰同一天。"
     },
     dongmun: {
-      name: "東門市場",
-      area: "濟州市",
-      naverQuery: "제주 동문시장",
-      image: "/dongmun.png",
-      tags: ["市場", "伴手禮", "宵夜"],
-      intro: "適合最後一晚採買伴手禮、吃小吃。住市區會非常方便。"
-  },
+  name: "東門市場",
+  area: "濟州市",
+  naverQuery: "제주 동문시장",
+  lat: 33.5121,
+  lng: 126.5260,
+  image: "/dongmun.png",
+  tags: ["市場", "伴手禮", "宵夜"],
+  intro: "適合最後一晚採買伴手禮、吃小吃。從牛島回到濟州本島後，可以安排在回飯店前順路逛。"
+},
 haejigaeCafe: {
   name: "Haejigae Café 夕陽咖啡廳",
   area: "涯月",
@@ -447,7 +449,10 @@ udoBlackBeach: {
 daiso: {
   name: "大創",
   area: "濟州",
-  naverQuery: "다이소 제주",
+  naverQuery: "다이소 제주 이도이동",
+  lat: 33.4994,
+  lng: 126.5297,
+  image: "/daiso.png",
   tags: ["購物", "生活用品", "伴手禮"],
   intro: "韓國大創適合採買生活小物、旅行用品、零食與可愛雜貨。安排在 Olive Young 後面一起採買很順。",
   shoppingList: [
@@ -482,6 +487,7 @@ oliveYoung: {
   name: "Olive Young",
   area: "濟州",
   naverQuery: "올리브영 제주",
+  image: "/oliveyoung.png",
   tags: ["藥妝", "購物", "伴手禮"],
   intro: "買伴手禮的時間到了。",
   shoppingList: [
@@ -596,24 +602,43 @@ oliveYoung: {
 },
   eggDrop: {
   name: "Egg Drop",
-  area: "濟州市",
-  naverQuery: "에그드랍 제주",
-  tags: ["早餐", "三明治", "抵達後補充體力"],
+  area: "濟州機場",
+  naverQuery: "에그드랍 제주공항점",
+  lat: 33.5113,
+  lng: 126.4929,
+  image: "/eggdrop.png",
+  tags: ["早餐", "三明治", "機場"],
   intro: "抵達濟州後先吃早餐，適合作為機場到飯店寄放行李前的第一站。"
 },
 hahahehe: {
   name: "hahahehe 漢堡",
   area: "牛島",
   naverQuery: "하하호호 우도",
+  lat: 33.5052,
+  lng: 126.9551,
+  image: "/hahahehe.png",
   tags: ["早餐", "漢堡", "牛島"],
-  intro: "牛島人氣漢堡店，抵達牛島後先吃早餐、補充體力。"
+  intro: "牛島人氣漢堡店，適合一抵達牛島後先吃早餐、補充體力，再開始白沙灘、牛頭峰與黑沙灘行程。"
 },
   udoi: {
   name: "UDOI",
   area: "牛島",
-  naverQuery: "UDOI 우도",
+  naverQuery: "우도i 우도해안길 814",
+  lat: 33.5068,
+  lng: 126.9555,
+  image: "/udoi.png",
   tags: ["伴手禮", "甜點", "牛島"],
-  intro: "牛島上的人氣伴手禮牛，要買島花生貝果脆片、橘子貝果脆片、橘子香氛片、橘子護手霜"
+  intro: "牛島上的人氣伴手禮／甜點店，適合安排在快艇後作為收尾，買東西、休息一下，再準備搭船回濟州。"
+},
+  udobong: {
+  name: "牛頭峰",
+  area: "牛島",
+  naverQuery: "우도봉",
+  lat: 33.4931,
+  lng: 126.9661,
+  image: "/udobong.png",
+  tags: ["牛島", "展望", "散步"],
+  intro: "牛島代表性展望點之一，可以俯看海岸與牛島地形。適合安排在白沙灘後、黑沙灘前。"
 },
   udoReturnPort: {
   name: "下牛木洞港",
