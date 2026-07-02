@@ -456,7 +456,7 @@ oliveYoung: {
   area: "濟州",
   naverQuery: "올리브영 제주",
   tags: ["藥妝", "購物", "伴手禮"],
-  intro: "買伴手禮的時間到了。"
+  intro: "買伴手禮的時間到了。",
    shoppingList: [
     {
       category: "保養品",
