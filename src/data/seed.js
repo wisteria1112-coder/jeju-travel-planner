@@ -457,6 +457,115 @@ oliveYoung: {
   naverQuery: "올리브영 제주",
   tags: ["藥妝", "購物", "伴手禮"],
   intro: "買伴手禮的時間到了。"
+   shoppingList: [
+    {
+      category: "保養品",
+      groups: [
+        {
+          title: "抗痘",
+          items: [
+            { name: "Anua 魚腥草77% B3 Zinc 鋅精華" },
+            { name: "Bring Green 保濕精華液" }
+          ]
+        },
+        {
+          title: "妝前",
+          items: [
+            { name: "Torriden DIVE IN 潛水舒緩霜" },
+            { name: "MEDITHERAPY 333精華", note: "玻尿酸" }
+          ]
+        },
+        {
+          title: "頭皮",
+          items: [
+            { name: "Aromatica 茶樹淨化爽膚液", note: "cp值高" },
+            { name: "Ryo Rootgen Aqua Peel 頭皮水", note: "高檔款" }
+          ]
+        }
+      ]
+    },
+    {
+      category: "香水",
+      groups: [
+        {
+          title: "香水",
+          items: [
+            { name: "A'ddict Peel the Bergamot（柚子）", note: "使用前須搖勻" },
+            { name: "A'ddict Warm Afternoon" }
+          ]
+        },
+        {
+          title: "內褲",
+          items: [
+            { name: "寬鬆四角內褲" }
+          ]
+        },
+        {
+          title: "機能茶包 Better AET",
+          items: [
+            { name: "紫色（薰衣草＋洋甘菊）", note: "睡眠障礙" },
+            { name: "綠色（地瓜＋南瓜＋決明子＋紅豆）", note: "日常消水腫" },
+            { name: "紅色 消水腫加強版" }
+          ]
+        }
+      ]
+    },
+    {
+      category: "保健品",
+      groups: [
+        {
+          title: "機能茶包 Better AET",
+          items: [
+            { name: "黃色 主打養胃、護胃" }
+          ]
+        },
+        {
+          title: "機能軟糖",
+          items: [
+            { name: "蜂蜜系列", note: "滋潤喉嚨" },
+            { name: "橘色（膠原蛋白／檸檬口味）", note: "維持肌膚彈性" },
+            { name: "粉色（補鐵／葡萄口味）" },
+            { name: "深藍色（綜合維他命／偏酸的檸檬）" },
+            { name: "藍色（葉黃素軟糖／藍莓口味）" }
+          ]
+        }
+      ]
+    },
+    {
+      category: "濟州限定",
+      groups: [
+        {
+          title: "食物",
+          items: [
+            { name: "牛島花生貝果脆片" },
+            { name: "橘子貝果脆片" },
+            { name: "橘子香氛片" }
+          ]
+        },
+        {
+          title: "商品",
+          items: [
+            { name: "護手霜" },
+            { name: "柑橘護唇膏" },
+            { name: "柑橘造海綿球" },
+            { name: "專屬痘痘貼" }
+          ]
+        }
+      ]
+    },
+    {
+      category: "避雷",
+      groups: [
+        {
+          title: "保養品",
+          items: [
+            { name: "d'alba 白松露水光噴霧" },
+            { name: "isoi 保加利亞玫瑰精華" }
+          ]
+        }
+      ]
+    }
+  ]
 },
 eggDrop: {
   name: "Egg Drop",
