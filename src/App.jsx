@@ -843,7 +843,7 @@ function toggleLuggageItem(item) {
       <strong>{expense.title}</strong>
       <small>{expense.category} · {nameOf(data.p{expense.payer || expense.paidBy}articipants, expense.paidBy)} 先付</small>
     </div>
-    <b>{money(expense.amount, expense.currency || "TWD")}}</b>
+    <b>{money(expense.amount, expense.currency || "TWD")}</b>
     <button aria-label="刪除支出" onClick={() => deleteExpense(expense.id)}>
       <Trash2 size={16} />
     </button>
