@@ -139,16 +139,6 @@ bagel: {
   tags: ["早餐", "咖啡", "貝果"],
   intro: "第一天抵達濟州後的早餐點，位於舊左邑東福路一帶，適合先補充體力再開始東部包車行程。"
 },
-manjanggul: {
-  name: "萬丈窟",
-  area: "舊左",
-  naverQuery: "만장굴",
-  lat: 33.5291,
-  lng: 126.7714,
-  image: "/manjanggul.png",
-  tags: ["自然", "洞窟", "世界遺產"],
-  intro: "濟州代表性的熔岩洞窟景點，適合安排約 1–1.5 小時。第一天包車前往東部時順路安排。"
-},
 eoureumNoodles: {
   name: "어우름제주고기국수 성산본점",
   area: "城山",
@@ -158,26 +148,6 @@ eoureumNoodles: {
   image: "/eoureum-noodles.png",
   tags: ["午餐", "濟州豬肉麵", "城山"],
   intro: "位於城山日出峰附近的午餐點，主打濟州 고기국수。安排在萬丈窟之後、城山日出峰之前很順。"
-},
-seongsan: {
-  name: "城山日出峰",
-  area: "城山",
-  naverQuery: "성산일출봉",
-  lat: 33.4581,
-  lng: 126.9425,
-  image: "/seongsan.png",
-  tags: ["自然", "海景", "世界遺產"],
-  intro: "濟州東部代表景點，可以視體力選擇登頂，或只在周邊拍照、看海景。"
-},
-seopjikoji: {
-  name: "涉地可支",
-  area: "城山",
-  naverQuery: "섭지코지",
-  lat: 33.4242,
-  lng: 126.9306,
-  image: "/seopjikoji.png",
-  tags: ["海岸", "散步", "拍照"],
-  intro: "城山日出峰附近的海岸景點，適合散步、拍照，放在城山日出峰後面很順。"
 },
     tangerineCafe: {
       name: "Cafe Tangerine Flower Attic",
@@ -231,13 +201,6 @@ seopjikoji: {
       tags: ["快艇", "水上活動"],
       intro: "路上隨便一家買票就可以，不用預約，可能要排隊。"
     },
-    snoopy: {
-      name: "史努比花園",
-      area: "舊左 / 東部",
-      naverQuery: "스누피가든",
-      tags: ["可愛", "拍照"],
-      intro: "非常適合可愛活潑風格的旅遊手冊與網頁主題，建議排 1.5–3 小時。"
-    },
     aqua: {
       name: "Aqua Planet Jeju",
       area: "城山",
@@ -276,18 +239,6 @@ osulloc: {
   tags: ["茶", "甜點", "博物館"],
   intro: "濟州西部知名茶文化景點，可以喝抹茶、逛茶園，也適合作為 Day 1 下午的休息點。"
 },
-
-yeomiji: {
-  name: "如美地植物園",
-  area: "中文觀光園區",
-  naverQuery: "여미지식물원",
-  lat: 33.2526,
-  lng: 126.4143,
-  image: "/yeomiji.png",
-  tags: ["植物園", "拍照", "室內"],
-  intro: "位於中文觀光園區的植物園，室內外都可逛，適合排在西部／南部行程中。"
-},
-
 hundo: {
   name: "薰陶 濟州黑豬肉專門店",
   area: "涯月",
@@ -306,36 +257,8 @@ park981: {
   lng: 126.3663,
   image: "/park981.png",
   tags: ["賽車", "活動", "刺激"],
-  intro: "濟州西部的重力賽車主題樂園，可以安排賽車與室內活動，是 Day 1 比較有動感的行程。"
+  intro: "濟州西部的重力賽車主題樂園，可以安排賽車與室內活動，是 Day 1 比較有動感的行程。""
 },
-
-breakfastTBD: {
-  name: "早餐待確定",
-  area: "待確認",
-  naverQuery: "제주 아침식사",
-  tags: ["早餐", "待確認"],
-  intro: "早餐尚未決定，之後可以依照當天路線、住宿地點與出發時間再補上。"
-},
-
-dinnerTBD: {
-  name: "晚餐待確定",
-  area: "待確認",
-  naverQuery: "제주 저녁식사",
-  tags: ["晚餐", "待確認"],
-  intro: "晚餐尚未決定，之後可以依照當天實際行程與大家想吃的類型再安排。"
-},
-
-hallasan: {
-  name: "漢拏山國立公園",
-  area: "濟州中部",
-  naverQuery: "한라산국립공원",
-  lat: 33.3617,
-  lng: 126.5292,
-  image: "/hallasan.png",
-  tags: ["自然", "登山", "國立公園"],
-  intro: "濟州代表性的山林景點。實際停留時間要看選擇的路線，如果只是輕鬆走走，可以安排半日。"
-},
-
 cheonjeyeon: {
   name: "天地淵瀑布",
   area: "西歸浦",
@@ -387,20 +310,6 @@ checkoutTaxi: {
   tags: ["退房", "叫車", "交通"],
   intro: "退房後叫車前往下一個地點或機場，建議前一天先確認行李與叫車時間。"
 },
-    lunchTBD: {
-  name: "午餐待確定",
-  area: "待確認",
-  naverQuery: "서귀포 점심",
-  tags: ["午餐", "待確認"],
-  intro: "午餐尚未決定，之後可以依照當天路線、實際體力與附近餐廳再安排。"
-},
-    udoReturnPort: {
-  name: "木洞港搭船回濟州",
-  area: "牛島",
-  naverQuery: "우도 목동항",
-  tags: ["交通", "港口", "回程"],
-  intro: "牛島行程結束後，從木洞港搭船回到濟州本島。建議提前確認最後船班時間，避免錯過回程。"
-},
 flightDeparture: {
   name: "飛機起飛",
   area: "濟州國際機場",
@@ -419,22 +328,6 @@ flightDeparture: {
   image: "/udo-sand.png",
   tags: ["甜點", "花生冰淇淋", "牛島"],
   intro: "牛島近年討論度很高的花生冰淇淋店"
-  },
-  udoWhiteBeach: {
-  name: "牛島白沙灘",
-  area: "牛島",
-  naverQuery: "우도 산호해수욕장",
-  image: "/udoWhiteBeach.png",
-  tags: ["白沙灘", "海景", "拍照"],
-  intro: "牛島代表性的白沙灘景點，適合散步、拍照，也很適合排在牛島行程前半段。"
- },
-udoBlackBeach: {
-  name: "牛島黑沙灘",
-  area: "牛島",
-  naverQuery: "우도 검멀레해변",
-  image: "/udoBlackBeach.png",
-  tags: ["黑沙灘", "海岸", "拍照"],
-  intro: "牛島知名黑沙灘，與白沙灘形成對比，適合拍照與看海岸地形。"
 },
 daiso: {
   name: "大創",
@@ -600,43 +493,77 @@ oliveYoung: {
   tags: ["早餐", "三明治", "機場"],
   intro: "抵達濟州後先吃早餐，適合作為機場到飯店寄放行李前的第一站。"
 },
-hahahehe: {
-  name: "hahahehe 漢堡",
-  area: "牛島",
-  naverQuery: "하하호호 우도",
-  lat: 33.5052,
-  lng: 126.9551,
-  image: "/hahahehe.png",
-  tags: ["早餐", "漢堡", "牛島"],
-  intro: "牛島人氣漢堡店，適合一抵達牛島後先吃早餐、補充體力，再開始白沙灘、牛頭峰與黑沙灘行程。"
+    seogwangNoodles: {
+  name: "서광마을 국수",
+  area: "濟州",
+  naverQuery: "서광마을 국수 제주",
+  tags: ["麵食", "在地小吃", "午餐"],
+  intro: "濟州的麵食店，適合安排作為行程中較輕鬆的一餐。以韓式麵食為主，適合在前往西歸浦或瀑布景點前後用餐。"
 },
-  udoi: {
-  name: "UDOI",
-  area: "牛島",
-  naverQuery: "우도i 우도해안길 814",
-  lat: 33.5068,
-  lng: 126.9555,
-  image: "/udoi.png",
-  tags: ["伴手禮", "甜點", "牛島"],
-  intro: "牛島上的人氣伴手禮／甜點店，適合安排在快艇後作為收尾，買東西、休息一下，再準備搭船回濟州。"
+
+loungeJ: {
+  name: "Lounge J",
+  area: "濟州",
+  naverQuery: "Lounge J 제주",
+  tags: ["咖啡", "休息", "甜點"],
+  intro: "適合中途休息的咖啡廳，可以作為景點之間的緩衝點。行程較滿的日子很適合安排一段咖啡時間。"
 },
-  udobong: {
-  name: "牛頭峰",
-  area: "牛島",
-  naverQuery: "우도봉",
-  lat: 33.4931,
-  lng: 126.9661,
-  image: "/udobong.png",
-  tags: ["牛島", "展望", "散步"],
-  intro: "牛島代表性展望點之一，可以俯看海岸與牛島地形。適合安排在白沙灘後、黑沙灘前。"
+
+chrysanthemumLoft: {
+  name: "菊花閣樓",
+  area: "濟州",
+  naverQuery: "菊花閣樓 제주",
+  tags: ["咖啡", "拍照", "甜點"],
+  intro: "帶有小閣樓感的咖啡廳，適合拍照、喝飲料與放慢步調。可以安排在瀑布或自然景點之後，作為下午的休息點。"
 },
-  udoReturnPort: {
-  name: "下牛木洞港",
+
+bhcCityHall: {
+  name: "BHC炸雞 濟州市廳店",
+  area: "濟州市廳",
+  naverQuery: "BHC 제주 시청점",
+  tags: ["炸雞", "晚餐", "外帶"],
+  intro: "韓國連鎖炸雞店，適合晚上想吃炸雞、啤酒或外帶回飯店時安排。濟州市廳一帶餐飲選擇多，交通也相對方便。"
+},
+
+lotteMart: {
+  name: "樂天超市",
+  area: "濟州",
+  naverQuery: "롯데마트 제주",
+  tags: ["超市", "採買", "零食"],
+  intro: "大型超市，適合採買零食、飲料、泡麵、伴手禮與旅行中需要補充的用品。也很適合安排在晚餐後順路採買。"
+},
+
+objectJeju: {
+  name: "오브젝트 제주점 Object Jeju Branch",
+  area: "濟州",
+  naverQuery: "오브젝트 제주점",
+  tags: ["文具", "選物店", "雜貨"],
+  intro: "濟州的選物與文具雜貨店，適合喜歡小物、紙品、設計商品的人。店內風格通常偏可愛、生活感，也適合挑伴手禮。"
+},
+
+udoCheonjinPort: {
+  name: "牛島 天津港",
   area: "牛島",
-  naverQuery: "우도 하우목동항",
-  image: "/udoReturnPort.png",
-  tags: ["港口", "回程", "交通"],
-  intro: "牛島行程結束後，從下牛木洞港搭船回濟州本島。建議提前確認最後船班時間。"
+  naverQuery: "우도 천진항",
+  tags: ["港口", "牛島", "交通"],
+  intro: "牛島主要港口之一，是往返濟州本島與牛島的重要交通點。搭船前後建議預留時間確認船班與排隊狀況。"
+},
+
+boryongCoffee: {
+  name: "Boryong Coffee & Bakery",
+  area: "濟州",
+  naverQuery: "Boryong Coffee Bakery 제주",
+  tags: ["咖啡", "麵包", "早餐"],
+  intro: "咖啡與烘焙店，適合作為早晨或中午前後的輕食點。可以喝咖啡、吃麵包，也適合在前往下一個景點前稍作休息。"
+},
+
+donsadon: {
+  name: "豚舍豚 돈사돈 總店",
+  area: "濟州",
+  naverQuery: "돈사돈 본점 제주",
+  tags: ["黑豬肉", "烤肉", "晚餐"],
+  intro: "濟州知名黑豬肉烤肉店，主打濟州黑豬肉。適合安排作為晚餐，尤其是想吃正式一點、代表性濟州料理的時候。"
+},
 }
 },
 expenses: []
