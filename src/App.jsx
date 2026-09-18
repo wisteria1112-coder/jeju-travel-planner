@@ -68,14 +68,6 @@ function createId(prefix) {
 }
 
 function getInitialData() {
-  try {
-    const saved = localStorage.getItem(LOCAL_KEY);
-    if (saved) return JSON.parse(saved);
-    const oldSaved = localStorage.getItem("jeju-travel-planner-local-v1");
-    if (oldSaved) return JSON.parse(oldSaved);
-  } catch {
-    // ignore broken local cache
-  }
   return seedData;
 }
 function calculateSettlements(expenses = [], participants = []) {
