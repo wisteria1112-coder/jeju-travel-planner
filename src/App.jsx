@@ -495,7 +495,7 @@ function toggleLuggageItem(item) {
   </div>
 </section>
 
-<section className="card menu-card">
+<section className="card menu-card" style={{ display: "none" }}>
   <p className="section-kicker">Money</p>
   <h2>旅行記帳</h2>
 
