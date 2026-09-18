@@ -20,17 +20,13 @@ export const seedData = {
       title: "橘子～大海～我們來了～",
       mood: "特種部隊出動！",
      items: [
-  { time: "23:50", title: "桃園機場集合", spotId: "taoyuanAirport", type: "transport" },
-  { time: "02:50", title: "台灣起飛", spotId: "taoyuanAirport", type: "flight" },
-  { time: "06:05", title: "抵達濟州機場", spotId: "airport", type: "flight" },
-  { time: "07:00", title: "Egg Drop 早餐", spotId: "eggDrop", type: "food" },
-  { time: "08:00", title: "Cony Ocean Suite Hotel 寄放行李", spotId: "hotel", type: "hotel" },
-  { time: "09:00", title: "Haejigae Cafe", spotId: "haejigaeCafe", type: "food" },
-  { time: "11:00", title: "9.81 Park 賽車", spotId: "park981", type: "activity" },
-  { time: "12:30", title: "Osulloc 茶博物館", spotId: "osulloc", type: "sight" },
-  { time: "15:00", title: "如美地植物園", spotId: "yeomiji", type: "sight" },
-  { time: "18:00", title: "晚餐｜薰陶 濟州黑豬肉專門店", spotId: "hundo", type: "food" },
-  { time: "20:00", title: "回飯店休息", spotId: "hotel", type: "hotel" }
+  { time: "23:50", title: "桃園機場", spotId: "taoyuanAirport", type: "transport" },
+  { time: "06:05", title: "濟州機場", spotId: "airport", type: "flight" },
+  { time: "07:00", title: "Egg Drop", spotId: "eggDrop", type: "food" },
+  { time: "08:30", title: "飯店放行李", spotId: "hotel", type: "hotel" },
+  { time: "10:30", title: "9.81 Park", spotId: "park981", type: "activity" },
+  { time: "13:30", title: "Osulloc 茶博物館", spotId: "osulloc", type: "sight" },
+  { time: "17:30", title: "Haejigae Café 夕陽咖啡廳", spotId: "haejigaeCafe", type: "cafe" }
 ]
   },
   {
@@ -40,11 +36,15 @@ export const seedData = {
       title: "橘子的深度探索",
       mood: "來都來了要了解一下🍊",
       items: [
-  { time: "10:00", title: "漢拏山國立公園", spotId: "hallasan", type: "sight" },
+  { time: "10:00", title: "서광마을 국수", spotId: "seogwangNoodles", type: "food" },
+  { time: "12:00", title: "Lounge J", spotId: "loungeJ", type: "cafe" },
   { time: "14:00", title: "正房瀑布", spotId: "jeongbang", type: "sight" },
   { time: "15:30", title: "天地淵瀑布", spotId: "cheonjeyeon", type: "sight" },
-  { time: "17:00", title: "橘花閣樓", spotId: "orangeLoft", type: "cafe" },
-  { time: "20:00", title: "回飯店休息", spotId: "hotel", type: "hotel" }
+  { time: "17:00", title: "菊花閣樓", spotId: "chrysanthemumLoft", type: "cafe" },
+  { time: "18:30", title: "Olive Young", spotId: "oliveYoung", type: "shopping" },
+  { time: "19:15", title: "大創", spotId: "daiso", type: "shopping" },
+  { time: "20:00", title: "BHC炸雞 濟州市廳店", spotId: "bhcCityHall", type: "food" },
+  { time: "21:00", title: "樂天超市", spotId: "lotteMart", type: "shopping" }
 ]
         },
   {
@@ -54,18 +54,14 @@ export const seedData = {
   title: "牛島一整天",
   mood: "花生冰淇淋、白沙灘、黑沙灘，最後用快艇收尾！",
 items: [
-  { time: "07:30", title: "出發前往城山港", spotId: "seongsanPort", type: "transport" },
-  { time: "09:00", title: "搭船前往牛島", spotId: "udo", type: "transport" },
-  { time: "09:45", title: "hahahehe 漢堡早餐", spotId: "hahahehe", type: "food" },
-  { time: "11:00", title: "牛島白沙灘", spotId: "udoWhiteBeach", type: "sight" },
-  { time: "12:00", title: "牛頭峰", spotId: "udobong", type: "sight" },
-  { time: "13:00", title: "牛島黑沙灘", spotId: "udoBlackBeach", type: "sight" },
-  { time: "14:00", title: "牛島快艇", spotId: "udoJetboat", type: "activity" },
-  { time: "15:30", title: "UDO SAND 花生冰淇淋", spotId: "udoSand", type: "food" },
-  { time: "16:00", title: "UDOI 伴手禮", spotId: "udoi", type: "shopping" },
-  { time: "17:00", title: "下牛木洞港搭船回濟州", spotId: "udoReturnPort", type: "transport" },
-  { time: "18:30", title: "東門市場", spotId: "dongmun", type: "food" },
-  { time: "20:30", title: "回飯店休息", spotId: "hotel", type: "hotel" }
+  { time: "09:00", title: "오브젝트 제주점 Object Jeju Branch", spotId: "objectJeju", type: "shopping" },
+  { time: "10:30", title: "London Bagel Museum Jeju", spotId: "bagel", type: "food" },
+  { time: "12:30", title: "城山港", spotId: "seongsanPort", type: "transport" },
+  { time: "13:00", title: "牛島", spotId: "udo", type: "transport" },
+  { time: "14:00", title: "UDO SAND", spotId: "udoSand", type: "food" },
+  { time: "15:00", title: "牛島快艇", spotId: "udoJetboat", type: "activity" },
+  { time: "16:30", title: "牛島 天津港", spotId: "udoCheonjinPort", type: "transport" },
+  { time: "19:00", title: "東門市場", spotId: "dongmun", type: "food" }
 ]
 },
 {
@@ -75,16 +71,10 @@ items: [
       title: "水..咕嚕咕嚕..族..咕嚕..館",
       mood: "聽說有動物表演",
    items: [
-  { time: "08:30", title: "London Bagel Museum Jeju", spotId: "bagel", type: "food" },
-  { time: "10:30", title: "萬丈窟", spotId: "manjanggul", type: "sight" },
-  { time: "12:30", title: "城山日出峰", spotId: "seongsan", type: "sight" },
-  { time: "14:00", title: "午餐｜어우름제주고기국수 성산본점", spotId: "eoureumNoodles", type: "food" },
-  { time: "15:30", title: "涉地可支", spotId: "seopjikoji", type: "sight" },
-  { time: "17:00", title: "水族館", spotId: "aquarium", type: "sight" },
-  { time: "18:00", title: "Olive Young", spotId: "oliveYoung", type: "shopping" },
-  { time: "18:30", title: "大創", spotId: "daiso", type: "shopping" },
-  { time: "20:00", title: "回飯店休息", spotId: "hotel", type: "hotel" } 
-    ]
+  { time: "10:00", title: "Boryong Coffee & Bakery", spotId: "boryongCoffee", type: "cafe" },
+  { time: "13:00", title: "水族館", spotId: "aquarium", type: "sight" },
+  { time: "18:00", title: "豚舍豚 돈사돈 總店", spotId: "donsadon", type: "food" }
+]
   },
   {
       id: "day5",
