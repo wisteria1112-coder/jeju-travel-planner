@@ -173,7 +173,7 @@ function pillIcon(type) {
 }
 
 export default function App() {
-  const [tripId, setTripId] = useState(() => localStorage.getItem("jeju-trip-id") || "jeju-2026");
+  const [tripId, setTripId] = useState(() => localStorage.getItem("jeju-trip-id") || "jeju-actual-2026");
   const [data, setData] = useState(getInitialData);
   const [view, setView] = useState("home");
   const [selectedLuggageName, setSelectedLuggageName] = useState("");
