@@ -29,11 +29,11 @@ import {
 } from "./firebase";
 
 const LOCAL_KEY = "jeju-travel-planner-local-v2";
-
-function money(value) {
-  return new Intl.NumberFormat("zh-TW", {
+const KRW_TO_TWD = 0.023;
+function money(value, currency = "TWD") {
+  return new Intl.NumberFormat(currency === "KRW" ? "ko-KR" : "zh-TW", {
     style: "currency",
-    currency: "TWD",
+    currency,
     maximumFractionDigits: 0
   }).format(Number(value || 0));
 }
@@ -79,6 +79,8 @@ function calculateSettlements(expenses = [], participants = []) {
 
   expenses.forEach((expense) => {
     const amount = Number(expense.amount) || 0;
+    const currency = expense.currency || "TWD";
+    const amountTwd = currency === "KRW" ? amount * KRW_TO_TWD : amount;
     const payer = expense.payer || expense.paidBy;
 
     const splitWith =
@@ -90,12 +92,12 @@ function calculateSettlements(expenses = [], participants = []) {
 
     if (!payer || balances[payer] === undefined || validSplitWith.length === 0) return;
 
-    const share = amount / validSplitWith.length;
+    const shareTwd = amountTwd / validSplitWith.length;
 
-    balances[payer] += amount;
+    balances[payer] += amountTwd;
 
     validSplitWith.forEach((name) => {
-      balances[name] -= share;
+      balances[name] -= shareTwd;
     });
   });
 
@@ -175,6 +177,7 @@ export default function App() {
   const [newExpense, setNewExpense] = useState({
   title: "",
   amount: "",
+  currency: "KRW",
   payer: "Iris",
   category: "餐飲",
   splitWith: []
@@ -381,6 +384,7 @@ function toggleLuggageItem(item) {
   id: createId("expense"),
   title: newExpense.title.trim(),
   amount: Number(newExpense.amount),
+  currency: newExpense.currency || "KRW",
   payer: newExpense.payer,
   category: newExpense.category || "其他",
   splitWith:
@@ -722,34 +726,30 @@ function toggleLuggageItem(item) {
                 <CreditCard size={34} />
               </div>
 
-              <form className="expense-form" onSubmit={addExpense}>
-                <h3><Pencil size={18} />新增支出</h3>
-                <input
-                  value={newExpense.title}
-                  onChange={(event) => setNewExpense({ ...newExpense, title: event.target.value })}
-                  placeholder="例如：牛島快艇"
-                />
-                <input
-                  value={newExpense.amount}
-                  onChange={(event) => setNewExpense({ ...newExpense, amount: event.target.value })}
-                  placeholder="金額，例如 2500"
-                  inputMode="numeric"
-                />
-               <select
-                 value={newExpense.payer}
-                  onChange={(event) => setNewExpense({ ...newExpense, paidBy: event.target.value })}
-                >
-                  {data.participants.map((person) => (
-                    <option key={person.id} value={person.id}>
-                      {person.name} 先付
-                    </option>
-                  ))}
-                </select>
-                <input
-                  value={newExpense.category}
-                  onChange={(event) => setNewExpense({ ...newExpense, category: event.target.value })}
-                  placeholder="分類，例如 餐飲 / 交通"
-                />
+              <div className="amount-row">
+  <input
+    value={newExpense.amount}
+    onChange={(event) =>
+      setNewExpense({ ...newExpense, amount: event.target.value })
+    }
+    placeholder={
+      newExpense.currency === "KRW"
+        ? "金額，例如 25000"
+        : "金額，例如 2500"
+    }
+  />
+
+  <select
+    value={newExpense.currency}
+    onChange={(event) =>
+      setNewExpense({ ...newExpense, currency: event.target.value })
+    }
+  >
+    <option value="KRW">韓元 KRW</option>
+    <option value="TWD">台幣 TWD</option>
+  </select>
+</div>
+              
 <div className="split-box">
   <button
     type="button"
@@ -843,7 +843,7 @@ function toggleLuggageItem(item) {
       <strong>{expense.title}</strong>
       <small>{expense.category} · {nameOf(data.participants, expense.paidBy)} 先付</small>
     </div>
-    <b>{money(expense.amount)}</b>
+    <b>{money(expense.amount, expense.currency || "TWD")}}</b>
     <button aria-label="刪除支出" onClick={() => deleteExpense(expense.id)}>
       <Trash2 size={16} />
     </button>
@@ -873,7 +873,7 @@ function toggleLuggageItem(item) {
                       <span>{nameOf(data.participants, transfer.from)}</span>
                       <b>→</b>
                       <span>{nameOf(data.participants, transfer.to)}</span>
-                      <strong>{money(transfer.amount)}</strong>
+                      <strong>{money(transfer.amount, "TWD")}</strong>
                     </div>
                   ))}
                 </div>
