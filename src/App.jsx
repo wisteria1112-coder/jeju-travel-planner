@@ -726,29 +726,37 @@ function toggleLuggageItem(item) {
                 <CreditCard size={34} />
               </div>
 <form className="expense-form" onSubmit={addExpense}>
-              <div className="amount-row">
   <input
-    value={newExpense.amount}
+    value={newExpense.title}
     onChange={(event) =>
-      setNewExpense({ ...newExpense, amount: event.target.value })
+      setNewExpense({ ...newExpense, title: event.target.value })
     }
-    placeholder={
-      newExpense.currency === "KRW"
-        ? "金額，例如 25000"
-        : "金額，例如 2500"
-    }
+    placeholder="例如：牛島快艇"
   />
 
-  <select
-    value={newExpense.currency}
-    onChange={(event) =>
-      setNewExpense({ ...newExpense, currency: event.target.value })
-    }
-  >
-    <option value="KRW">韓元 KRW</option>
-    <option value="TWD">台幣 TWD</option>
-  </select>
-</div>
+  <div className="amount-row">
+    <input
+      value={newExpense.amount}
+      onChange={(event) =>
+        setNewExpense({ ...newExpense, amount: event.target.value })
+      }
+      placeholder={
+        newExpense.currency === "KRW"
+          ? "金額，例如 25000"
+          : "金額，例如 2500"
+      }
+    />
+
+    <select
+      value={newExpense.currency}
+      onChange={(event) =>
+        setNewExpense({ ...newExpense, currency: event.target.value })
+      }
+    >
+      <option value="KRW">韓元 KRW</option>
+      <option value="TWD">台幣 TWD</option>
+    </select>
+  </div>
               
 <div className="split-box">
   <button
