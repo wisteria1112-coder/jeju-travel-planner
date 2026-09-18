@@ -725,7 +725,7 @@ function toggleLuggageItem(item) {
                 </div>
                 <CreditCard size={34} />
               </div>
-
+<form className="expense-form" onSubmit={addExpense}>
               <div className="amount-row">
   <input
     value={newExpense.amount}
