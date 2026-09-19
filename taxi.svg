@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="110" fill="#FFF4D8"/>
+
+  <circle cx="256" cy="256" r="190" fill="#FFE6A3"/>
+  <circle cx="256" cy="256" r="160" fill="#FFF8E6"/>
+
+  <path d="M142 280 L170 210 C178 190 195 178 216 178 H296 C317 178 334 190 342 210 L370 280 Z"
+        fill="#FFB84D"/>
+
+  <path d="M180 212 C186 200 196 194 211 194 H301 C316 194 326 200 332 212 L350 258 H162 Z"
+        fill="#FFD36E"/>
+
+  <rect x="192" y="148" width="128" height="42" rx="18" fill="#FF8A2A"/>
+  <text x="256" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="white">
+    TAXI
+  </text>
+
+  <rect x="126" y="268" width="260" height="82" rx="32" fill="#FF9F2E"/>
+
+  <circle cx="188" cy="352" r="32" fill="#4A3A2A"/>
+  <circle cx="188" cy="352" r="14" fill="#FFF4D8"/>
+
+  <circle cx="324" cy="352" r="32" fill="#4A3A2A"/>
+  <circle cx="324" cy="352" r="14" fill="#FFF4D8"/>
+
+  <rect x="150" y="292" width="52" height="24" rx="12" fill="#FFF4D8"/>
+  <rect x="310" y="292" width="52" height="24" rx="12" fill="#FFF4D8"/>
+
+  <path d="M226 220 H286" stroke="#FFF4D8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M214 246 H298" stroke="#FFF4D8" stroke-width="14" stroke-linecap="round"/>
+
+  <path d="M362 136 C388 136 410 158 410 184 C410 226 362 250 362 250 C362 250 314 226 314 184 C314 158 336 136 362 136Z"
+        fill="#FF7A2A" opacity="0.95"/>
+  <circle cx="362" cy="183" r="20" fill="#FFF4D8"/>
+</svg>
