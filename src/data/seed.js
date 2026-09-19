@@ -153,21 +153,11 @@ eoureumNoodles: {
       name: "正房瀑布",
       area: "西歸浦",
       naverQuery: "정방폭포",
+      lat: 33.2450,
+      lng: 126.5732,
       image: "/jeongbang.png",
       tags: ["瀑布", "海邊"],
       intro: "濟州代表性瀑布。"
-    },
-    cheonjiyeon: {
-      name: "天地淵瀑布",
-      area: "西歸浦",
-      naverQuery: "천지연폭포",
-    },
-    seongsanPort: {
-      name: "城山港",
-      area: "東部",
-      naverQuery: "성산항",
-      tags: ["牛島船班", "交通"],
-      intro: "要帶護照!要帶雨衣!/n買票的時候一次買來回、乘船申報單寫兩張"
     },
     udo: {
       name: "牛島",
@@ -233,7 +223,7 @@ park981: {
   tags: ["賽車", "活動", "刺激"],
   intro: "濟州西部的重力賽車主題樂園，可以安排賽車與室內活動，是 Day 1 比較有動感的行程。"
 },
-cheonjeyeon: {
+cheonjiyeon: {
   name: "天地淵瀑布",
   area: "西歸浦",
   naverQuery: "천지연폭포",
