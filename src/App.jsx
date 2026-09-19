@@ -142,14 +142,13 @@ function nameOf(participants, id) {
 
 
 function naverMapUrl(spot) {
-  const appname = "jeju-travel-planner-eosin.vercel.app";
-  const name = encodeURIComponent(spot?.naverQuery || spot?.name || "");
+  const query = spot?.naverQuery || spot?.name || "";
 
   if (spot?.lat && spot?.lng) {
-    return `nmap://route/public?dlat=${spot.lat}&dlng=${spot.lng}&dname=${name}&appname=${appname}`;
+    return `https://map.naver.com/p/search/${encodeURIComponent(query)}?c=${spot.lng},${spot.lat},15,0,0,0,dh`;
   }
 
-  return `nmap://search?query=${name}&appname=${appname}`;
+  return `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
 }
 
 function pillIcon(type) {
