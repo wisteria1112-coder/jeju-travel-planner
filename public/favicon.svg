@@ -1,0 +1,50 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="none"/>
+
+  <circle
+    cx="256"
+    cy="256"
+    r="185"
+    fill="none"
+    stroke="#ff8a2a"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-dasharray="26 22"
+  />
+
+  <circle
+    cx="256"
+    cy="270"
+    r="115"
+    fill="url(#orangeGradient)"
+  />
+
+  <circle
+    cx="218"
+    cy="220"
+    r="34"
+    fill="#ffd38a"
+    opacity="0.85"
+  />
+
+  <path
+    d="M282 145 C310 105, 357 105, 383 130 C344 137, 313 154, 288 181"
+    fill="#7bc96f"
+  />
+
+  <path
+    d="M252 155 C260 124, 286 105, 315 98"
+    fill="none"
+    stroke="#7a9b35"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+
+  <defs>
+    <radialGradient id="orangeGradient" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffd27a"/>
+      <stop offset="45%" stop-color="#ff9a2e"/>
+      <stop offset="100%" stop-color="#f36b13"/>
+    </radialGradient>
+  </defs>
+</svg>
