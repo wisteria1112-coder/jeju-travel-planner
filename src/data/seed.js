@@ -25,6 +25,7 @@ export const seedData = {
   { time: "07:00", title: "Egg Drop", spotId: "eggDrop", type: "food" },
   { time: "08:30", title: "飯店放行李", spotId: "hotel", type: "hotel" },
   { time: "10:30", title: "9.81 Park", spotId: "park981", type: "activity" },
+  { time: "13:00", title: "TEA TERRACE", spotId: "teaTerrace", type: "cafe" },
   { time: "13:30", title: "Osulloc 茶博物館", spotId: "osulloc", type: "sight" },
   { time: "17:30", title: "Haejigae Café 夕陽咖啡廳", spotId: "haejigaeCafe", type: "cafe" }
 ]
@@ -204,7 +205,14 @@ haejigaeCafe: {
   tags: ["咖啡", "早餐", "海景"],
   intro: "室內韓屋風、室外海島風的人氣咖啡廳，食物不怎麼樣\n招牌：橘子蛋糕"
 },
-
+teaTerrace: {
+  name: "TEA TERRACE",
+  area: "濟州西部",
+  naverQuery: "TEA TERRACE 제주",
+  image: "/tea-terrace.png",
+  tags: ["茶", "咖啡", "甜點"],
+  intro: "在茶博館內的餐應，有很多抹茶餐點。"
+},
 osulloc: {
   name: "Osulloc 茶博物館",
   area: "安德",
