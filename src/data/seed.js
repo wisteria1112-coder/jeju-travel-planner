@@ -198,7 +198,6 @@ haejigaeCafe: {
 teaTerrace: {
   name: "TEA TERRACE",
   area: "濟州西部",
-  naverQuery: "TEA TERRACE 제주",
   image: "/tea-terrace.png",
   tags: ["茶", "咖啡", "甜點"],
   intro: "在茶博館內的餐應，有很多抹茶餐點。"
@@ -206,7 +205,7 @@ teaTerrace: {
 osulloc: {
   name: "Osulloc 茶博物館",
   area: "安德",
-  naverQuery: "오설록 티뮤지엄",
+  naverQuery: "오설록 티뮤지엄 서귀포시 안덕면 신화역사로 15",
   lat: 33.3059,
   lng: 126.2895,
   image: "/osulloc.png",
