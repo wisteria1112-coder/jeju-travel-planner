@@ -117,7 +117,6 @@ items: [
       lng: 126.4929,
       image: "/jejuairport.png",
       tags: ["機場", "行李", "回程"],
-      intro: "第一天先處理行李與交通，最後一天因為早班機，住宿靠市區會最安心。"
     },
     hotel: {
   name: "Cony Ocean Suite Hotel",
@@ -137,7 +136,7 @@ bagel: {
   lng: 126.7099,
   image: "/london-bagel.png",
   tags: ["早餐", "咖啡", "貝果"],
-  intro: "第一天抵達濟州後的早餐點，位於舊左邑東福路一帶，適合先補充體力再開始東部包車行程。"
+  intro: "口味很多好吃，內用有蒼蠅"
 },
 eoureumNoodles: {
   name: "어우름제주고기국수 성산본점",
@@ -148,20 +147,6 @@ eoureumNoodles: {
   image: "/eoureum-noodles.png",
   tags: ["午餐", "濟州豬肉麵", "城山"],
   intro: "位於城山日出峰附近的午餐點，主打濟州 고기국수。安排在萬丈窟之後、城山日出峰之前很順。"
-},
-    tangerineCafe: {
-      name: "Cafe Tangerine Flower Attic",
-      area: "西歸浦",
-      naverQuery: "카페 귤꽃다락",
-      tags: ["橘子咖啡", "拍照"],
-      intro: "橘子園咖啡廳，非常適合這次橘、白、粉、藍的可愛主題。"
-    },
-    citrusMuseum: {
-      name: "橘子博物館",
-      area: "西歸浦",
-      naverQuery: "제주감귤박물관",
-      tags: ["橘子", "博物館"],
-      intro: "可以跟橘子咖啡園放同一天，做成南部橘子主題半日。"
     },
     jeongbang: {
       name: "正房瀑布",
@@ -169,14 +154,12 @@ eoureumNoodles: {
       naverQuery: "정방폭포",
       image: "/jeongbang.png",
       tags: ["瀑布", "海邊"],
-      intro: "濟州代表性瀑布之一，白天去更適合拍照。"
+      intro: "濟州代表性瀑布。"
     },
     cheonjiyeon: {
       name: "天地淵瀑布",
       area: "西歸浦",
       naverQuery: "천지연폭포",
-      tags: ["瀑布", "夜間散步"],
-      intro: "比正房瀑布更適合傍晚或晚一點去，行程彈性高。"
     },
     seongsanPort: {
       name: "城山港",
@@ -191,7 +174,7 @@ eoureumNoodles: {
       naverQuery: "우도",
       image: "/udo.png",
       tags: ["離島", "環島", "海景"],
-      intro: "下船後可以買公車票，今天逆時針行駛。"
+      intro: "騎電動腳踏車比較方便。"
     },
     udoJetboat: {
       name: "牛島快艇",
@@ -199,14 +182,7 @@ eoureumNoodles: {
       naverQuery: "우도 제트보트",
       image: "/udoJetboat.png",
       tags: ["快艇", "水上活動"],
-      intro: "路上隨便一家買票就可以，不用預約，可能要排隊。"
-    },
-    aqua: {
-      name: "Aqua Planet Jeju",
-      area: "城山",
-      naverQuery: "아쿠아플라넷 제주",
-      tags: ["水族館", "室內"],
-      intro: "東部室內景點，下雨備案也很好用。可跟城山日出峰同一天。"
+      intro: "我們搭小貓快艇，超好玩超刺激，一個人大概700台幣。"
     },
     dongmun: {
   name: "東門市場",
@@ -216,7 +192,7 @@ eoureumNoodles: {
   lng: 126.5260,
   image: "/dongmun.png",
   tags: ["市場", "伴手禮", "宵夜"],
-  intro: "適合最後一晚採買伴手禮、吃小吃。從牛島回到濟州本島後，可以安排在回飯店前順路逛。"
+  intro: "我們覺得食物都不好吃但有很多伴手禮可以買"
 },
 haejigaeCafe: {
   name: "Haejigae Café 夕陽咖啡廳",
@@ -226,7 +202,7 @@ haejigaeCafe: {
   lng: 126.3095,
   image: "/haejigae-cafe.png",
   tags: ["咖啡", "早餐", "海景"],
-  intro: "室內韓屋風、室外海島風的人氣咖啡廳，雖然是觀夕陽出名但我們就是要早上去\n招牌：橘子蛋糕"
+  intro: "室內韓屋風、室外海島風的人氣咖啡廳，食物不怎麼樣\n招牌：橘子蛋糕"
 },
 
 osulloc: {
@@ -237,17 +213,7 @@ osulloc: {
   lng: 126.2895,
   image: "/osulloc.png",
   tags: ["茶", "甜點", "博物館"],
-  intro: "濟州西部知名茶文化景點，可以喝抹茶、逛茶園，也適合作為 Day 1 下午的休息點。"
-},
-hundo: {
-  name: "薰陶 濟州黑豬肉專門店",
-  area: "涯月",
-  naverQuery: "훈도 애월흑돼지",
-  lat: 33.4637,
-  lng: 126.3112,
-  image: "/hundo.png",
-  tags: ["晚餐", "黑豬肉", "烤肉"],
-  intro: "Day 1 晚餐，安排在西部包車行程結束後，作為第一天收尾。"
+  intro: "濟州西部知名茶文化景點，可以喝抹茶、逛茶園，超好喝直接買爆"
 },
 park981: {
   name: "9.81 Park",
@@ -270,17 +236,6 @@ cheonjeyeon: {
   intro: "西歸浦市區附近的瀑布景點，步道相對好走，適合下午安排。"
 },
 
-orangeLoft: {
-  name: "橘花閣樓",
-  area: "濟州",
-  naverQuery: "귤꽃다락 제주",
-  lat: 33.2449,
-  lng: 126.5306,
-  image: "/orangeLoft.png",
-  tags: ["咖啡", "橘子", "拍照"],
-  intro: "行程後半段的咖啡／休息點，適合在瀑布或山林行程後慢慢收尾。"
-},
-
 seongsanPort: {
   name: "城山港",
   area: "城山",
@@ -289,7 +244,7 @@ seongsanPort: {
   lng: 126.9337,
   image: "/seongsanPort.png",
   tags: ["港口", "牛島", "交通"],
-  intro: "前往牛島的主要搭船地點，建議提早抵達，預留買票與排隊時間。"
+  intro: "前往牛島的主要搭船地點，要帶護照。"
 },
 
 aquarium: {
@@ -300,7 +255,7 @@ aquarium: {
   lng: 126.9278,
   image: "/aquarium.png",
   tags: ["水族館", "室內", "雨天備案"],
-  intro: "濟州東部大型水族館，適合排在城山、涉地可支附近，也可以作為雨天備案。"
+  intro: "濟州東部大型水族館，超多入口但只有一個可以進去，我們逛了4個小時。"
 },
 
 checkoutTaxi: {
@@ -308,7 +263,6 @@ checkoutTaxi: {
   area: "飯店",
   naverQuery: "Cony Ocean Suite Hotel 제주",
   tags: ["退房", "叫車", "交通"],
-  intro: "退房後叫車前往下一個地點或機場，建議前一天先確認行李與叫車時間。"
 },
 flightDeparture: {
   name: "飛機起飛",
@@ -317,7 +271,6 @@ flightDeparture: {
   lat: 33.5113,
   lng: 126.4929,
   tags: ["回程", "機場", "飛機"],
-  intro: "回程班機起飛，建議提早抵達濟州國際機場辦理報到、托運與安檢。"
   },
   udoSand: {
   name: "UDO SAND",
@@ -327,7 +280,7 @@ flightDeparture: {
   lng: 126.9555,
   image: "/udo-sand.png",
   tags: ["甜點", "花生冰淇淋", "牛島"],
-  intro: "牛島近年討論度很高的花生冰淇淋店"
+  intro: "牛島近年討論度很高的花生冰淇淋店，橘子口味也超好吃"
 },
 daiso: {
   name: "大創",
@@ -337,7 +290,7 @@ daiso: {
   lng: 126.5297,
   image: "/daiso.png",
   tags: ["購物", "生活用品", "伴手禮"],
-  intro: "韓國大創適合採買生活小物、旅行用品、零食與可愛雜貨。安排在 Olive Young 後面一起採買很順。",
+  intro: "繼續買",
   shoppingList: [
     {
       category: "美妝保養",
@@ -498,7 +451,7 @@ oliveYoung: {
   area: "濟州",
   naverQuery: "서광마을 국수 제주",
   tags: ["麵食", "在地小吃", "午餐"],
-  intro: "濟州的麵食店，適合安排作為行程中較輕鬆的一餐。以韓式麵食為主，適合在前往西歸浦或瀑布景點前後用餐。"
+  intro: "早餐，有鮑魚粥、豬肉湯、醒酒湯"
 },
 
 loungeJ: {
@@ -506,7 +459,7 @@ loungeJ: {
   area: "濟州",
   naverQuery: "Lounge J 제주",
   tags: ["咖啡", "休息", "甜點"],
-  intro: "適合中途休息的咖啡廳，可以作為景點之間的緩衝點。行程較滿的日子很適合安排一段咖啡時間。"
+  intro: "伴手禮店，有很多三麗鷗，零食不要在這裡買很貴"
 },
 
 chrysanthemumLoft: {
@@ -514,7 +467,7 @@ chrysanthemumLoft: {
   area: "濟州",
   naverQuery: "菊花閣樓 제주",
   tags: ["咖啡", "拍照", "甜點"],
-  intro: "帶有小閣樓感的咖啡廳，適合拍照、喝飲料與放慢步調。可以安排在瀑布或自然景點之後，作為下午的休息點。"
+  intro: "復古風的咖啡廳，適合拍照、甜點只有橘子和巧克力口味還有檸檬起司蛋糕。"
 },
 
 bhcCityHall: {
@@ -522,7 +475,7 @@ bhcCityHall: {
   area: "濟州市廳",
   naverQuery: "BHC 제주 시청점",
   tags: ["炸雞", "晚餐", "外帶"],
-  intro: "韓國連鎖炸雞店，適合晚上想吃炸雞、啤酒或外帶回飯店時安排。濟州市廳一帶餐飲選擇多，交通也相對方便。"
+  intro: "好吃炸機店，不多說。"
 },
 
 lotteMart: {
@@ -530,7 +483,7 @@ lotteMart: {
   area: "濟州",
   naverQuery: "롯데마트 제주",
   tags: ["超市", "採買", "零食"],
-  intro: "大型超市，適合採買零食、飲料、泡麵、伴手禮與旅行中需要補充的用品。也很適合安排在晚餐後順路採買。"
+  intro: "買伴手禮。"
 },
 
 objectJeju: {
@@ -538,7 +491,7 @@ objectJeju: {
   area: "濟州",
   naverQuery: "오브젝트 제주점",
   tags: ["文具", "選物店", "雜貨"],
-  intro: "濟州的選物與文具雜貨店，適合喜歡小物、紙品、設計商品的人。店內風格通常偏可愛、生活感，也適合挑伴手禮。"
+  intro: "買爆quokka"
 },
 
 udoCheonjinPort: {
@@ -546,7 +499,7 @@ udoCheonjinPort: {
   area: "牛島",
   naverQuery: "우도 천진항",
   tags: ["港口", "牛島", "交通"],
-  intro: "牛島主要港口之一，是往返濟州本島與牛島的重要交通點。搭船前後建議預留時間確認船班與排隊狀況。"
+  intro: "搭船回濟州島。"
 },
 
 boryongCoffee: {
@@ -554,7 +507,7 @@ boryongCoffee: {
   area: "濟州",
   naverQuery: "Boryong Coffee Bakery 제주",
   tags: ["咖啡", "麵包", "早餐"],
-  intro: "咖啡與烘焙店，適合作為早晨或中午前後的輕食點。可以喝咖啡、吃麵包，也適合在前往下一個景點前稍作休息。"
+  intro: "公車站後面的麵包店，有試吃，每個都超好吃"
 },
 
 donsadon: {
@@ -562,7 +515,7 @@ donsadon: {
   area: "濟州",
   naverQuery: "돈사돈 본점 제주",
   tags: ["黑豬肉", "烤肉", "晚餐"],
-  intro: "濟州知名黑豬肉烤肉店，主打濟州黑豬肉。適合安排作為晚餐，尤其是想吃正式一點、代表性濟州料理的時候。"
+  intro: "濟州知名黑豬肉烤肉店，主打濟州黑豬肉，GD愛店"
 }
 },
 expenses: []
