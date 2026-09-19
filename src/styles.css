@@ -1310,4 +1310,7 @@ main {
   .amount-row {
     grid-template-columns: 1fr;
   }
+.screen-top .soft-btn {
+  display: none !important;
+}
 }
