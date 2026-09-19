@@ -452,6 +452,7 @@ oliveYoung: {
   name: "서광마을 국수",
   area: "濟州",
   naverQuery: "서광마을 국수 제주",
+  image: "/seogwang-noodles.png",
   tags: ["麵食", "在地小吃", "午餐"],
   intro: "早餐，有鮑魚粥、豬肉湯、醒酒湯"
 },
