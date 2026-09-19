@@ -486,8 +486,8 @@ lotteMart: {
   intro: "買伴手禮。"
 },
 
-objectJeju: {
-  name: "오브젝트 제주점 Object Jeju Branch",
+ the object: {
+  name: "the object",
   area: "濟州",
   naverQuery: "오브젝트 제주점",
   tags: ["文具", "選物店", "雜貨"],
