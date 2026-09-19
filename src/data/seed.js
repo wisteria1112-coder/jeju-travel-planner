@@ -8,7 +8,7 @@ export const seedData = {
   participants: [
     { id: "a", name: "Iris" },
     { id: "b", name: "梨寶" },
-    { id: "c", name: "心禾禾" },
+    { id: "c", name: "星河" },
     { id: "d", name: "Cindy" },
     { id: "e", name: "小葵" }
   ],
