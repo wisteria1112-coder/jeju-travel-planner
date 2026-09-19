@@ -261,13 +261,15 @@ checkoutTaxi: {
   tags: ["退房", "叫車", "交通"],
 },
 flightDeparture: {
-  name: "飛機起飛",
+  name: "濟州機場",
   area: "濟州國際機場",
   naverQuery: "제주국제공항",
   lat: 33.5113,
   lng: 126.4929,
+  image: "/jeju-airport.png",
   tags: ["回程", "機場", "飛機"],
-  },
+  intro: "回程從濟州國際機場出發。"
+},
   udoSand: {
   name: "UDO SAND",
   area: "牛島",
