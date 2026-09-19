@@ -260,7 +260,7 @@ checkoutTaxi: {
   naverQuery: "Cony Ocean Suite Hotel 제주",
   lat: 33.4849,
   lng: 126.3678,
-  image: "/taxi.svg",
+  image: "/jeju-airport.png",
   tags: ["退房", "叫車", "交通"],
   intro: "退房後從飯店叫車前往機場。"
 },
