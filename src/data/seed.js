@@ -54,7 +54,7 @@ export const seedData = {
   title: "牛島一整天",
   mood: "花生冰淇淋、白沙灘、黑沙灘，最後用快艇收尾！",
 items: [
-  { time: "09:00", title: "the object", spotId: "theobject", type: "shopping" },
+  { time: "09:00", title: "Object Jeju", spotId: "objectJeju", type: "shopping" },
   { time: "10:30", title: "London Bagel Museum Jeju", spotId: "bagel", type: "food" },
   { time: "12:30", title: "城山港", spotId: "seongsanPort", type: "transport" },
   { time: "13:00", title: "牛島", spotId: "udo", type: "transport" },
@@ -500,13 +500,13 @@ lotteMart: {
   intro: "買伴手禮。"
 },
 
- the object: {
-  name: "the object",
+objectJeju: {
+  name: "오브젝트 제주점 Object Jeju Branch",
   area: "濟州",
   naverQuery: "오브젝트 제주점",
   lat: 33.5536,
   lng: 126.7089,
-  image: "/the object",
+  image: "/object-jeju.png",
   tags: ["文具", "選物店", "雜貨"],
   intro: "買爆quokka"
 },
