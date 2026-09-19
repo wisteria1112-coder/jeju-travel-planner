@@ -40,7 +40,7 @@ export const seedData = {
   { time: "10:00", title: "서광마을 국수", spotId: "seogwangNoodles", type: "food" },
   { time: "12:00", title: "Lounge J", spotId: "loungeJ", type: "cafe" },
   { time: "14:00", title: "正房瀑布", spotId: "jeongbang", type: "sight" },
-  { time: "15:30", title: "天地淵瀑布", spotId: "cheonjeyeon", type: "sight" },
+  { time: "15:30", title: "天地淵瀑布", spotId: "cheonjiyeon", type: "sight" },
   { time: "17:00", title: "菊花閣樓", spotId: "chrysanthemumLoft", type: "cafe" },
   { time: "18:30", title: "Olive Young", spotId: "oliveYoung", type: "shopping" },
   { time: "19:15", title: "大創", spotId: "daiso", type: "shopping" },
@@ -226,14 +226,12 @@ park981: {
 cheonjiyeon: {
   name: "天地淵瀑布",
   area: "西歸浦",
-  naverQuery: "천지연폭포",
+  naverQuery: "천지연폭포 제주 서귀포",
   lat: 33.2469,
   lng: 126.5544,
   image: "/cheonjeyeon.png",
   tags: ["瀑布", "散步", "西歸浦"],
-  intro: "西歸浦市區附近的瀑布景點，步道相對好走，適合下午安排。"
 },
-
 seongsanPort: {
   name: "城山港",
   area: "城山",
@@ -244,18 +242,16 @@ seongsanPort: {
   tags: ["港口", "牛島", "交通"],
   intro: "前往牛島的主要搭船地點，要帶護照。"
 },
-
 aquarium: {
-  name: "水族館",
+  name: "Aqua Planet Jeju 水族館",
   area: "城山",
-  naverQuery: "아쿠아플라넷 제주",
+  naverQuery: "아쿠아플라넷 제주 서귀포시 성산읍 섭지코지로 95",
   lat: 33.4327,
   lng: 126.9278,
   image: "/aquarium.png",
   tags: ["水族館", "室內", "雨天備案"],
   intro: "濟州東部大型水族館，超多入口但只有一個可以進去，我們逛了4個小時。"
 },
-
 checkoutTaxi: {
   name: "退房叫車",
   area: "飯店",
@@ -467,16 +463,15 @@ loungeJ: {
 },
 
 chrysanthemumLoft: {
-  name: "菊花閣樓",
-  area: "濟州",
-  naverQuery: "菊花閣樓 제주",
+  name: "橘花閣樓 귤꽃다락",
+  area: "西歸浦",
+  naverQuery: "귤꽃다락 제주 서귀포시 이어도로1027번길 34",
   lat: 33.2449,
   lng: 126.5306,
   image: "/chrysanthemum-loft.png",
   tags: ["咖啡", "拍照", "甜點"],
   intro: "復古風的咖啡廳，適合拍照、甜點只有橘子和巧克力口味還有檸檬起司蛋糕。"
 },
-
 bhcCityHall: {
   name: "BHC炸雞 濟州市廳店",
   area: "濟州市廳",
@@ -520,18 +515,16 @@ udoCheonjinPort: {
   tags: ["港口", "牛島", "交通"],
   intro: "搭船回濟州島。"
 },
-
 boryongCoffee: {
   name: "Boryong Coffee & Bakery",
-  area: "濟州",
-  naverQuery: "Boryong Coffee Bakery 제주",
+  area: "城山",
+  naverQuery: "보룡제과 제주 서귀포시 성산읍 고성오조로 48-1",
   lat: 33.4519,
   lng: 126.9168,
   image: "/boryong.png",
   tags: ["咖啡", "麵包", "早餐"],
-  intro: "公車站後面的麵包店，有試吃，每個都超好吃"
+  intro: "公車站後面的麵包店，有試吃，每個都超好吃。"
 },
-
 donsadon: {
   name: "豚舍豚 돈사돈 總店",
   area: "濟州",
