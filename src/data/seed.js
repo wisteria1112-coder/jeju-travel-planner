@@ -323,6 +323,8 @@ oliveYoung: {
   name: "Olive Young",
   area: "濟州",
   naverQuery: "올리브영 제주",
+  lat: 33.5009,
+  lng: 126.5293,
   image: "/oliveyoung.png",
   tags: ["藥妝", "購物", "伴手禮"],
   intro: "買伴手禮的時間到了。",
@@ -444,7 +446,7 @@ oliveYoung: {
   lng: 126.4929,
   image: "/eggdrop.png",
   tags: ["早餐", "三明治", "機場"],
-  intro: "抵達濟州後先吃早餐，適合作為機場到飯店寄放行李前的第一站。"
+  intro: "早餐，好吃在吃一次。"
 },
     seogwangNoodles: {
   name: "서광마을 국수",
@@ -458,6 +460,9 @@ loungeJ: {
   name: "Lounge J",
   area: "濟州",
   naverQuery: "Lounge J 제주",
+  lat: 33.5107,
+  lng: 126.4729,
+  image: "/loungej.png",
   tags: ["咖啡", "休息", "甜點"],
   intro: "伴手禮店，有很多三麗鷗，零食不要在這裡買很貴"
 },
@@ -466,6 +471,9 @@ chrysanthemumLoft: {
   name: "菊花閣樓",
   area: "濟州",
   naverQuery: "菊花閣樓 제주",
+  lat: 33.2449,
+  lng: 126.5306,
+  image: "/chrysanthemum-loft.png",
   tags: ["咖啡", "拍照", "甜點"],
   intro: "復古風的咖啡廳，適合拍照、甜點只有橘子和巧克力口味還有檸檬起司蛋糕。"
 },
@@ -474,6 +482,9 @@ bhcCityHall: {
   name: "BHC炸雞 濟州市廳店",
   area: "濟州市廳",
   naverQuery: "BHC 제주 시청점",
+  lat: 33.5008,
+  lng: 126.5307,
+  image: "/bhc-cityhall.png",
   tags: ["炸雞", "晚餐", "外帶"],
   intro: "好吃炸機店，不多說。"
 },
@@ -482,6 +493,9 @@ lotteMart: {
   name: "樂天超市",
   area: "濟州",
   naverQuery: "롯데마트 제주",
+  lat: 33.4825,
+  lng: 126.4815,
+  image: "/lottemart.png",
   tags: ["超市", "採買", "零食"],
   intro: "買伴手禮。"
 },
@@ -490,6 +504,9 @@ lotteMart: {
   name: "the object",
   area: "濟州",
   naverQuery: "오브젝트 제주점",
+  lat: 33.5536,
+  lng: 126.7089,
+  image: "/the object",
   tags: ["文具", "選物店", "雜貨"],
   intro: "買爆quokka"
 },
@@ -498,6 +515,9 @@ udoCheonjinPort: {
   name: "牛島 天津港",
   area: "牛島",
   naverQuery: "우도 천진항",
+  lat: 33.4974,
+  lng: 126.9515,
+  image: "/udo-cheonjin-port.png",
   tags: ["港口", "牛島", "交通"],
   intro: "搭船回濟州島。"
 },
@@ -506,6 +526,9 @@ boryongCoffee: {
   name: "Boryong Coffee & Bakery",
   area: "濟州",
   naverQuery: "Boryong Coffee Bakery 제주",
+  lat: 33.4519,
+  lng: 126.9168,
+  image: "/boryong.png",
   tags: ["咖啡", "麵包", "早餐"],
   intro: "公車站後面的麵包店，有試吃，每個都超好吃"
 },
@@ -514,6 +537,9 @@ donsadon: {
   name: "豚舍豚 돈사돈 總店",
   area: "濟州",
   naverQuery: "돈사돈 본점 제주",
+  lat: 33.4811,
+  lng: 126.4765,
+  image: "/donsadon.png",
   tags: ["黑豬肉", "烤肉", "晚餐"],
   intro: "濟州知名黑豬肉烤肉店，主打濟州黑豬肉，GD愛店"
 }
